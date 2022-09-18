@@ -6,15 +6,29 @@ BBC Micro inside a open-frame ATX PC case
 
 !!MEDIA TODO: GIF clip of the machine in action. overview, power up, closeup of animated backlit motherboard, using modern input devices.
 
-## What's BBC Micro?
+## BBC Micro: (A brief) History and Legacy
 
-## Oh no! You butchered a piece of computing history!
+* In early 1980s, BBC started the *Computer Literacy Project*, aiming to introduce people to computers and show what they can do.
 
-Non-destructive, all modifications are reversible.
+* **[Acorn Computer](https://en.wikipedia.org/wiki/Acorn_Computers)**'s design won out, and was developed into **[BBC Microcomputer](https://en.wikipedia.org/wiki/BBC_Micro)**.
 
-Technically no modification is needed at all, I went quite far for aesthetic reasons.
+* BBC Micro was featured heavily in [TV programmes](https://en.wikipedia.org/wiki/The_Computer_Programme), and became ubiquitous in education environments in UK.
 
-And even though this kind of shenanigans seems one-off, back then users seemed to go a lot harder when it comes to modding.
+* A common sight in school computer labs, it introduced a whole generation to computing, and inspired many bright minds in related fields.
+
+* Acorn went on to develop the **Acorn RISC Machine**, or [ARM](https://en.wikipedia.org/wiki/ARM_architecture_family) in short (Yes, *that* ARM). This innovative processor architecture are now found in virtually all smartphones, 32-bit microcontrollers, and even desktop PCs.
+
+* It might be relatively unknown outside UK, but BBC Micro holds a significant place in computer history, as well as nostalgia in many peoples hearts!
+
+## Oh no! You butchered a piece of important computer history!
+
+First of all, all modifications here are **non-destructive and reversible**. So no BBC Micros were harmed during the creation of this project!
+
+What's more, it seems that when it comes to modifying BBC Micros, power users back then did not hold back either.
+
+show ebay machine, and then torch computer? both work.
+
+Here's what
 
 The original Torch computer is basically a BBC micro motherboard stuck in a case with a monitor, disk drives, and built-in keyboard with a few extra keys.
 
@@ -35,6 +49,15 @@ show the owl case micro too? mention backstory, the sellers father were really g
 It also came with a external disk drive with dual 5.25 inch floppies, and I spent some time documenting the whole thing and checked it through. Removed RIFA caps,hooked everything up, i didn't want to risk using the PSU inside the external drive so I hooked up a ATX PSU directly to it. I turned it on and it actually worked! All the ROMs are visible, and it is quite a sight to behold:
 
 which got me thinking, if i want to actually use it like that, wouldnt it be a lot nicer to put everything in the same case, like a ATX PC case?
+
+## Why?
+
+Many projects putting new stuff in old cases, often destructively. I don't think that's right, and it's fun to see what I can do and how far I can push.
+
+Pay omage to the users back then.
+
+why not?
+
 
 ## A happy coincidence?
 
