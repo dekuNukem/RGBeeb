@@ -24,17 +24,22 @@ BBC Micro inside a open-frame ATX PC case
 
 First of all, all modifications here are **non-destructive and reversible**. So no BBC Micros were harmed during the creation of this project!
 
-What's more, it seems that when it comes to modifying BBC Micros, power users back then did not hold back either.
+not all modification are bad, if done properly can expand capabilites or aesthetics.
 
-show ebay machine, and then torch computer? both work.
+What's more, it seems that when it comes to modifying BBC Micros, users back then did not hold back either. One great example is the original [Torch computer](https://en.wikipedia.org/wiki/Torch_Computers):
 
-Here's what
+It is a sleek all-in-one computer with a display, keyboard, and disk drives, running a version CP/M called CPN. Although eagle-eyed viewer might spot the UI looks suspiciously familiar!
 
-The original Torch computer is basically a BBC micro motherboard stuck in a case with a monitor, disk drives, and built-in keyboard with a few extra keys.
+take some screenshot here
+https://www.youtube.com/watch?v=pNdYtTvEAQs&t=116s
+
+The secret is revealed looking inside the case, they literally nicked the motherboard from a BBC Micro and built their own computer around it:
+
+[Here's a video](https://www.youtube.com/watch?v=pNdYtTvEAQs) of the very same machine!
 
 !!MEDIA TODO: Photos I took at the computer museum, you can see the BBC micro motherboard mounted to the case.
 
-Of course they went a bit further than that, adding a Z80 co-processor and CP/M capabilities. But the idea stands. (what idea?)
+Credits where due, they did add a Z80 co-processor, CP/M, networking capabilities, and a new case and keyboard. They also went on to develop their [own stuff](https://en.wikipedia.org/wiki/Torch_Computers#Torch_Triple_X) further down the line. But it is a great example of modifying an existing computer to expand its capabilities.
 
 Which leads to another machine i picked up locally via ebay, from the sellers very inventive father:
 
