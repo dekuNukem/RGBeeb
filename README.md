@@ -54,19 +54,19 @@ Torch Computer went on to develop their [own machines](https://en.wikipedia.org/
 
 ## The FrankenBeeb
 
-Of course, Beeb tinkering did not stop with commercial companies, apparently enterprising users had a go as well!
+Of course, Beeb tinkering did not stop with commercial companies, apparently plenty enterprising users had a go as well!
 
 Here is a machine I picked up locally via ebay:
 
 ![Alt text](photos/ebay.png)
 
-It's a Beeb with ... a separate keyboard and hinged case?
+It's a Beeb with ... a separate keyboard and hinged case??
 
-The top half of the Beeb was replaced with a hinged lid with a toggle switch, and the keyboard is now in its own case with ribbon cable (???).
+The top half of the Beeb was replaced with a flat hinged lid, now resembling a small PC case. And the keyboard is now in its own metal enclosure with ribbon cable (???).
 
 ![Alt text](photos/case.png)
 
-The new flat top most likely allows the computer, disk drive and monitor to be stacked on top each other, saving valuable desk space.
+The new flat case most likely allows the computer, disk drive and monitor to be stacked on top each other, saving valuable desk space.
 
 A look inside revealed big upgrades, fully kitted out with sidewise expansion card, floppy disc controller, battery backup, a standalone audio jack, and speech synthesis chips. And just look at all the ROMs!
 
@@ -78,49 +78,68 @@ The disc drive features dual-80 track full height floppy drives, with some notes
 
 ![Alt text](photos/disc.jpeg)
 
-There is no brand name or identifying information on any of the modifications, which led me to assume that the whole thing was home-made or at least from a kit. Either way, it is a seriously impressive feat of how far people would go to personalize their computers to their exact liking.
+There is no brand name or identifying information on any of the modifications, which led me to assume that the whole thing was home-made or at least from a kit.
+
+Either way, it looks very professionally done, and is a seriously impressive feat of how far people would go to personalize their computers to their exact liking.
 
 I removed the RIFA caps from the PSU, took lots of photos for documentation, cleaned up the PCB, and tested it out. It actually works! Look at the huge list of ROMs:
 
 ![Alt text](photos/roms.jpeg)
 
-The disc drive works too! I decided not to risk the original power supply, and used a modern ATX PSU to power the drives. And Beeb can read the discs just fine:
+The disc drive works too! I decided not to risk the original power supply, and used a modern ATX PSU to power the drives. And the Beeb read the discs just fine:
 
 ![Alt text](photos/mess2.jpg)
 
 As you can see, it's quite a mess indeed. It was at this point that an idea occurred to me:
 
-*Wouldn't it be nice if all those can go into a single ATX PC case?*
+***Wouldn't it be nice if all those can go into a single ATX PC case?***
+
+* Everything's in one place, no more separate boxes.
+
+* Juxtaposition of old and new. 40 year old hardware in cutting edge 
+
+* very much in the spirit
 
 ## A Happy Coincidence?
 
 That sure sounded like an outrageous idea, but after bit of thinking, I felt that it wasn't completely unrealistic.
 
-* The floppy drives are off-the-shelf parts, and they are designed to go into 5.25 inch bays.
+* The 5.25" floppy drives are designed to go into 5.25" bays, so no problem there.
 
 * BBC Micro motherboard needs +5V to work, which ATX PSU have.
 
-* Also -5V for sound and RS423, which can be derived from -12V rail on ATX PSU.
+* It also need -5V for sound and RS423 serial, but it can be easily derived from the -12V rail
 
-Not many hurdles so far, but what about the motherboard itself? I did some measurements
+So far so good, but what about the motherboard itself? I found a spare and did some measurements.
 
-so I did some quite measurements. To my surprise, by what can only be described as sheer coincidence, the size of the BBC micro motherboard is almost identical to the full-size ATX motherboard! BBC is ???mm by ???mm, and ATX is 305x244mm. here is a comparison:
+Imagine my surprise when I found that BBC micro motherboard has **almost identical size** to the full-size ATX specification!
 
-!!MEDIA TODO: SVG comparison of two board outlines.
+PHOTO OF BEEB MB AND AN ATX MB, MAYBE SVG COMPARISON
 
-adapter plate
+BBC is ???mm by ???mm, and ATX is 305x244mm. Either it's one hell of a coincidence, or Acorn was so ahead of its time that it predicted ATX form factor 14 years ahead!
 
-for mockup, i used the bbc micro motherboard from the owl BBC, it didnt come with a PSU for some reason, after some testing i think i knew why. this one is in pretty rough shape, quite a few reworks and bodge wires, it works but is very unstable, it had a bad VIA, and then still usually crashes after a few minutes. strongly suspect an intermittent RAM program. still, just for mockup. 
+## Full Steam Ahead!
+
+With that shocking revelation, there really isn't any hurdles left at all! I quickly designed an adapter plate. It screws into the case standoffs, and Beeb MB screws into that:
+
+and made one out of hardboard: 
 
 !!MEDIA TODO: Photo of bbc micro motherboard with hard board adapter plate side by side
 
 !!MEDIA TODO: Photo of motherboard inside the shit PC case
 
-tried out out in a 30 quid junk case, it actually fits fine, looks strange though.
+I tried it out in my spare junk PC case, and as expected it fits fine! Most of the ports even line up with the I/O window! There are even space for the connectors in the back! Although this particular case is a bit too short, so the 5.25" drives would block the Tube and 1MHz connector.
 
-## case selection / a case of ???
+Which brings us neatly to the question: What case *should* I use?
 
-with that out of the way, it really set things in motion, now i have to pick a PC case and think about the next steps.
+## Case Selection / a case of ???
+
+Initially I wanted to use one of those absolutely obnoxious gaming cases kitted out with RGB peripherals for maximum hilarity:
+
+!!MEDIA TODO: Photo of RGB CASE
+
+I 
+
 
 self contained BBC micro with two disk drives inside a ATX case with PSU and working power buttons and LEDs just like a real PC.
 

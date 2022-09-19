@@ -14,6 +14,10 @@ dumb it down a bit for regular readers and main stream tech blog editors.
 
 show the owl case micro too? mention backstory, the sellers father were really good at those.
 
+by what can only be described as sheer coincidence, 
+
+
+for mockup, i used the bbc micro motherboard from the owl BBC, it didnt come with a PSU for some reason, after some testing i think i knew why. this one is in pretty rough shape, quite a few reworks and bodge wires, it works but is very unstable, it had a bad VIA, and then still usually crashes after a few minutes. strongly suspect an intermittent RAM program. still, just for mockup. 
 
 
 ## Trivia
