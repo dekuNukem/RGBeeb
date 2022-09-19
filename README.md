@@ -14,6 +14,8 @@ BBC Micro inside a open-frame ATX PC case
 
 * BBC Micro was featured heavily in [TV programmes](https://en.wikipedia.org/wiki/The_Computer_Programme), and became ubiquitous in education environments in UK.
 
+![Alt text](photos/tv.png)
+
 * A common sight in school computer labs, it introduced a whole generation to computing, and inspired many bright minds in related fields.
 
 * Acorn went on to develop the **Acorn RISC Machine**, or [ARM](https://en.wikipedia.org/wiki/ARM_architecture_family) in short (Yes, *that* ARM). This innovative processor architecture are now found in virtually all smartphones, 32-bit microcontrollers, and even desktop PCs.
@@ -23,8 +25,6 @@ BBC Micro inside a open-frame ATX PC case
 ## Oh no! You butchered a piece of important computer history!
 
 First of all, all modifications here are **non-destructive and reversible**. So no BBC Micros were harmed during the creation of this project!
-
-not all modification are bad, if done properly can expand capabilites or aesthetics.
 
 What's more, it seems that when it comes to modifying BBC Micros, users back then did not hold back either. One great example is the original [Torch computer](https://en.wikipedia.org/wiki/Torch_Computers):
 
@@ -142,7 +142,7 @@ Needed to remove tube connectors, write about low-temp alloy desoldering?
 
 Another neat side effect of putting it in a PC case is that I can do away with the old power supply which tends to blow up if the RIFA capacitor is not removed. Modern ATX PSU had all the required voltages. now 
 
-## RGB lighting
+## Did anyone say RGB?
 
 repair, intricate trace designs, would be very attractive to add backlight to the back of the motherboard. luckly the motherboard had no ground pours, making the traces extra visible. did a mockup by taping some RGB light strips, and it looked absolutly amazing.
 
