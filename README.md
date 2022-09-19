@@ -18,7 +18,7 @@ BBC Micro inside a open-frame ATX PC case
 
 * A common sight in school computer labs, it introduced a whole generation to computing, and inspired many bright minds in related fields.
 
-* Acorn went on to develop the **Acorn RISC Machine**, or [ARM](https://en.wikipedia.org/wiki/ARM_architecture_family) in short (Yes, *that* ARM). This innovative processor architecture are now found in virtually all smartphones, 32-bit microcontrollers, and even desktop PCs.
+* Acorn went on to develop the **Acorn RISC Machine**, or [ARM](https://en.wikipedia.org/wiki/ARM_architecture_family) in short (Yes, *that* ARM), which now are found in virtually all smartphones, 32-bit microcontrollers, and even desktop PCs.
 
 * It might be relatively unknown outside UK, but BBC Micro holds a significant place in computer history, as well as nostalgia in many peoples hearts!
 
