@@ -9,3 +9,23 @@ Here's what
 
 
 not all modification are bad, if done properly can expand capabilites or aesthetics.
+
+dumb it down a bit for regular readers and main stream tech blog editors.
+
+show the owl case micro too? mention backstory, the sellers father were really good at those.
+
+
+
+## Trivia
+
+* BBC Basic very fast
+
+* Model A, B, B plus, etc, used by raspberry pi!
+
+## Why?
+
+Many projects putting new stuff in old cases, often destructively. I don't think that's right, and it's fun to see what I can do and how far I can push.
+
+Pay omage to the users back then.
+
+why not?

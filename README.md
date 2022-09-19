@@ -6,11 +6,15 @@ BBC Micro inside a open-frame ATX PC case
 
 !!MEDIA TODO: GIF clip of the machine in action. overview, power up, closeup of animated backlit motherboard, using modern input devices.
 
-## BBC Micro: (A brief) History and Legacy
+## BBC Micro: (A quick) Introduction
+
+### History and Legacy
 
 * In early 1980s, BBC started the *Computer Literacy Project*, aiming to introduce people to computers and show what they can do.
 
-* **[Acorn Computer](https://en.wikipedia.org/wiki/Acorn_Computers)**'s design won out, and was developed into **[BBC Microcomputer](https://en.wikipedia.org/wiki/BBC_Micro)**.
+* **[Acorn Computer](https://en.wikipedia.org/wiki/Acorn_Computers)**'s design won out, and was developed into **[BBC Microcomputer](https://en.wikipedia.org/wiki/BBC_Micro)**, often nicknamed the "**Beeb**".
+
+TAKE MY OWN PHOTO OF BBC MICRO, LOW ANGLE SO THE IT CAN BE CROPPED IS SHORT
 
 * BBC Micro was featured heavily in [TV programmes](https://en.wikipedia.org/wiki/The_Computer_Programme), and became ubiquitous in education environments in UK.
 
@@ -18,55 +22,89 @@ BBC Micro inside a open-frame ATX PC case
 
 * A common sight in school computer labs, it introduced a whole generation to computing, and inspired many bright minds in related fields.
 
-* Acorn went on to develop the **Acorn RISC Machine**, or [ARM](https://en.wikipedia.org/wiki/ARM_architecture_family) in short (Yes, *that* ARM), which now are found in virtually all smartphones, 32-bit microcontrollers, and even desktop PCs.
+* Acorn went on to develop the **Acorn RISC Machine**, or [ARM](https://en.wikipedia.org/wiki/ARM_architecture_family) in short (Yes, *that* ARM), which are now found in virtually all smartphones, 32-bit microcontrollers, and even desktop PCs.
+
+![Alt text](photos/arm.png)
 
 * It might be relatively unknown outside UK, but BBC Micro holds a significant place in computer history, as well as nostalgia in many peoples hearts!
 
+### Specifications
+
+### Trivias
+
 ## Oh no! You butchered a piece of important computer history!
 
-First of all, all modifications here are **non-destructive and reversible**. So no BBC Micros were harmed during the creation of this project!
+First of all, all modifications here are **non-destructive and reversible**. So no Beebs were harmed during the creation of this project!
 
-What's more, it seems that when it comes to modifying BBC Micros, users back then did not hold back either. One great example is the original [Torch computer](https://en.wikipedia.org/wiki/Torch_Computers):
+What's more, modifying BBC Micros certainly was not unheard of even back then! One great example is the original [Torch Communicator](https://en.wikipedia.org/wiki/Torch_Computers):
 
-It is a sleek all-in-one computer with a display, keyboard, and disk drives, running a version CP/M called CPN. Although eagle-eyed viewer might spot the UI looks suspiciously familiar!
+![Alt text](photos/torch.jpeg)
 
-take some screenshot here
-https://www.youtube.com/watch?v=pNdYtTvEAQs&t=116s
+A sleek business machine with integrated display, keyboard, and disk drives, running a version CP/M called CPN. What's not to like?
 
-The secret is revealed looking inside the case, they literally nicked the motherboard from a BBC Micro and built their own computer around it:
+At this point, eagle-eyed viewers might notice the UI looks suspiciously familiar! The secret is revealed looking inside the case [thanks to this video](https://www.youtube.com/watch?v=pNdYtTvEAQs):
 
-[Here's a video](https://www.youtube.com/watch?v=pNdYtTvEAQs) of the very same machine!
+![Alt text](photos/torchinside.png)
 
-!!MEDIA TODO: Photos I took at the computer museum, you can see the BBC micro motherboard mounted to the case.
+Yep, they literally nicked the motherboard from a BBC Micro and built their own computer around it!
 
-Credits where due, they did add a Z80 co-processor, CP/M, networking capabilities, and a new case and keyboard. They also went on to develop their [own stuff](https://en.wikipedia.org/wiki/Torch_Computers#Torch_Triple_X) further down the line. But it is a great example of modifying an existing computer to expand its capabilities.
+Despite the humble root, the Torch Communicator was a fairly advanced machine, having a Z80 co-processor running CP/M with networking capabilities, and it was the [first microcomputer](https://nosher.net/archives/computers/micro_decision_1982-05_002) to be fully approved by British Telecom for connection to the telephone and Telex network, in 1982!
 
-Which leads to another machine i picked up locally via ebay, from the sellers very inventive father:
+Torch Computer went on to develop their [own machines](https://en.wikipedia.org/wiki/Torch_Computers#Torch_Triple_X) later. But this is a great example of building upon an existing computer to expand its capabilities.
 
-!!MEDIA TODO: Photo of ebay listings
+## The FrankenBeeb
 
-you can see this one went even further, putting the keyboard in its own case, a lid on the case to make it a box, and tons of upgrades! Seriously just look at all the ROMs.
+Of course, Beeb tinkering did not stop with commercial companies, apparently enterprising users had a go as well!
 
-dumb it down a bit for regular readers and main stream tech blog editors.
+Here is a machine I picked up locally via ebay:
 
-show the owl case micro too? mention backstory, the sellers father were really good at those.
+![Alt text](photos/ebay.png)
 
-It also came with a external disk drive with dual 5.25 inch floppies, and I spent some time documenting the whole thing and checked it through. Removed RIFA caps,hooked everything up, i didn't want to risk using the PSU inside the external drive so I hooked up a ATX PSU directly to it. I turned it on and it actually worked! All the ROMs are visible, and it is quite a sight to behold:
+It's a Beeb with ... a separate keyboard and hinged case?
 
-which got me thinking, if i want to actually use it like that, wouldnt it be a lot nicer to put everything in the same case, like a ATX PC case?
+The top half of the Beeb was replaced with a hinged lid with a toggle switch, and the keyboard is now in its own case with ribbon cable (???).
 
-## Why?
+![Alt text](photos/case.png)
 
-Many projects putting new stuff in old cases, often destructively. I don't think that's right, and it's fun to see what I can do and how far I can push.
+The new flat top most likely allows the computer, disk drive and monitor to be stacked on top each other, saving valuable desk space.
 
-Pay omage to the users back then.
+A look inside revealed big upgrades, fully kitted out with sidewise expansion card, floppy disc controller, battery backup, a standalone audio jack, and speech synthesis chips. And just look at all the ROMs!
 
-why not?
+The toggle switch is wired up to a jumper on the sidewise card, most likely for switching ROM banks.
 
+![Alt text](photos/hinge.jpeg)
 
-## A happy coincidence?
+The disc drive features dual-80 track full height floppy drives, with some notes on the door:
 
-That did seem like an outrageous idea, so I did some quite measurements. To my surprise, by what can only be described as sheer coincidence, the size of the BBC micro motherboard is almost identical to the full-size ATX motherboard! BBC is ???mm by ???mm, and ATX is 305x244mm. here is a comparison:
+![Alt text](photos/disc.jpeg)
+
+There is no brand name or identifying information on any of the modifications, which led me to assume that the whole thing was home-made or at least from a kit. Either way, it is a seriously impressive feat of how far people would go to personalize their computers to their exact liking.
+
+I removed the RIFA caps from the PSU, took lots of photos for documentation, cleaned up the PCB, and tested it out. It actually works! Look at the huge list of ROMs:
+
+![Alt text](photos/roms.jpeg)
+
+The disc drive works too! I decided not to risk the original power supply, and used a modern ATX PSU to power the drives. And Beeb can read the discs just fine:
+
+![Alt text](photos/mess2.jpg)
+
+As you can see, it's quite a mess indeed. It was at this point that an idea occurred to me:
+
+*Wouldn't it be nice if all those can go into a single ATX PC case?*
+
+## A Happy Coincidence?
+
+That sure sounded like an outrageous idea, but after bit of thinking, I felt that it wasn't completely unrealistic.
+
+* The floppy drives are off-the-shelf parts, and they are designed to go into 5.25 inch bays.
+
+* BBC Micro motherboard needs +5V to work, which ATX PSU have.
+
+* Also -5V for sound and RS423, which can be derived from -12V rail on ATX PSU.
+
+Not many hurdles so far, but what about the motherboard itself? I did some measurements
+
+so I did some quite measurements. To my surprise, by what can only be described as sheer coincidence, the size of the BBC micro motherboard is almost identical to the full-size ATX motherboard! BBC is ???mm by ???mm, and ATX is 305x244mm. here is a comparison:
 
 !!MEDIA TODO: SVG comparison of two board outlines.
 
