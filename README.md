@@ -6,6 +6,22 @@ BBC Micro inside a open-frame ATX PC case
 
 !!MEDIA TODO: GIF clip of the machine in action. overview, power up, closeup of animated backlit motherboard, using modern input devices.
 
+## Highlights
+
+* Fully functional BBC Micro inside open-frame ATX PC case
+
+* Animated RGB Backlight
+
+* Working dual full-height 5.25" Floppy Drives
+
+* USB keyboard and gamepad ([via USB4VC](https://github.com/dekuNukem/USB4VC/blob/master/README.md))
+
+* HDMI video out ([via RGB2HDMI](https://github.com/hoglet67/RGBtoHDMI))
+
+* SD card support (TurboMMC)
+
+* Working soft power and reset button
+
 ## BBC Micro: (A quick) Introduction
 
 ### History and Legacy
@@ -116,7 +132,10 @@ Imagine my surprise when I found that BBC micro motherboard has **almost identic
 
 PHOTO OF BEEB MB AND AN ATX MB, MAYBE SVG COMPARISON
 
-BBC is ???mm by ???mm, and ATX is 305x244mm. Either it's one hell of a coincidence, or Acorn was so ahead of its time that it predicted ATX form factor 14 years ahead!
+![Alt text](photos/atxbbc.png)
+
+
+BBC is 310mm x 230mm, and ATX is 305x244mm. Either it's one hell of a coincidence, or Acorn was so ahead of its time that it predicted ATX form factor 14 years ahead!
 
 ## Full Steam Ahead!
 
@@ -138,7 +157,7 @@ Initially I wanted to use one of those absolutely obnoxious gaming cases kitted 
 
 !!MEDIA TODO: Photo of RGB CASE
 
-I 
+I am NOT a fan of RGB at all, but 
 
 
 self contained BBC micro with two disk drives inside a ATX case with PSU and working power buttons and LEDs just like a real PC.
