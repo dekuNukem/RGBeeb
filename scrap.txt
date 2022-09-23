@@ -1,3 +1,15 @@
+
+
+* Striking yet minimalist design
+* Puts the motherboard on display front and center
+* Lots of space, flexible & modular mounting options, no need to worry about PCI slots blocking analogue and econet ports.
+* Mounting holes for water cooling can probably be used for 5.25 inch drives.
+
+
+## Things to consider
+
+Still 
+
 * Finally, I really like its owl logo! Minimalist and whimsical, been using it as my profile photo for years!
 
 Technically no modification is needed at all, I went quite far for aesthetic reasons.
@@ -6,6 +18,22 @@ And even though this kind of shenanigans seems one-off, back then users seemed t
 show ebay machine, and then torch computer? both work.
 
 Here's what
+
+mention really dont like RGB gaming builds, i find them obnoxious and pointless. all my pcs are under the desk and i dont look at them when i use them!
+
+almost all modern PC case doesn't have 5.25 inch bay anymore! there is just a blank space there. those who did does not support full height drive anymore as well, as they are optimised for optical drives and have half-height drives that prevent full height drives to be inserted. 
+
+!!MEDIA TODO: screenshots of PC cases on amazon or newegg or uk equivalent?
+
+I want my dual full-height drives, that means four(!) 5.25 inch bays! and its safe to say i wasnt able to find any gaming cases on sale today with that.
+
+
+With modern cases a dead end, I started to look at cases around mid-2000s, where gaming PC were starting to become a thing, and 5.25" bays were yet to died out.
+
+I then decided to turn my attention to a little eariler, and got myself a case from early 2000s. A handsome looking aluminum coolermaster full-size case. it has 4 bays and everything i need. its a nice case for a period build but still leaves me a bit cold. the major theme of this build is to contrast the 40 years old computer with modern enclosure, and using a 20 years old case just wasnt going to cut it.
+
+!!MEDIA TODO: Photo of my coolermaster case
+
 
 
 not all modification are bad, if done properly can expand capabilites or aesthetics.

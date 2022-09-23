@@ -135,88 +135,71 @@ PHOTO OF BEEB MB AND AN ATX MB, MAYBE SVG COMPARISON
 ![Alt text](photos/atxbbc.png)
 
 
-BBC is 310mm x 230mm, and ATX is 305x244mm. Either it's one hell of a coincidence, or Acorn was so ahead of its time that it predicted ATX form factor 14 years ahead!
+BBC is 310mm x 230mm, and ATX is 305x244mm. Either it's one hell of a coincidence, or Acorn was so ahead of its time that it predicted ATX form factor **14 years** ahead!
 
-## Full Steam Ahead!
+Still in disbelief, I placed a spare BBC motherboard inside a random ATX case, and low and behold, it fits almost perfectly!
 
-With that shocking revelation, there really isn't any hurdles left at all! I quickly designed an adapter plate. It screws into the case standoffs, and Beeb MB screws into that:
+!!MEDIA TODO: Photo of motherboard inside the shit PC case, NEW PHOTO better illustrates the point.
 
-and made one out of hardboard: 
+The RGB, cassette, serial, composite and RF ports even line up with the I/O window! And there are also space for all the connectors in the back! This is almost too good to be true.
 
-!!MEDIA TODO: Photo of bbc micro motherboard with hard board adapter plate side by side
-
-!!MEDIA TODO: Photo of motherboard inside the shit PC case
-
-I tried it out in my spare junk PC case, and as expected it fits fine! Most of the ports even line up with the I/O window! There are even space for the connectors in the back! Although this particular case is a bit too short, so the 5.25" drives would block the Tube and 1MHz connector.
+Although in this particular case(!!), the PCI bracket is blocking the analogue and econet port, and 5.25" drives won't fit since is a bit too short.
 
 Which brings us neatly to the question: What case *should* I use?
 
-## Case Selection / a case of ???
+## Case Selection
 
-Initially I wanted to use one of those absolutely obnoxious gaming cases kitted out with RGB peripherals for maximum hilarity:
+Initially, I wanted one of those absolutely obnoxious gaming cases kitted out with RGB peripherals like something straight out of r/pcmasterrace, just for maximum hilarity.
 
-!!MEDIA TODO: Photo of RGB CASE
+!!MEDIA TODO: Photo of RGB CASE, and a photo from PCMR reddit
 
-I am NOT a fan of RGB at all, but 
+So I set out to look for a case that's:
 
+* I can buy brand new
 
-self contained BBC micro with two disk drives inside a ATX case with PSU and working power buttons and LEDs just like a real PC.
+* Full size ATX or larger
 
-mention really dont like RGB gaming builds, i find them obnoxious and pointless. all my pcs are under the desk and i dont look at them when i use them!
+* Gaming aesthetics (RGB, Glass panel, etc)
 
-at first i wanted a obnoxious RGB esport gaming case just for the shit of it. something like the stuff people show off on pcmasterrace reddit:
+* Has four 5.25" bays for two full-height disk drives
 
-!!MEDIA TODO: Photo of obnoxious gaming RGB PC builds
+Didn't seem like a tall order, but after sifting through dozens of pages on amazon and newegg, I came to the devastating conclusion such case *simply doesn't exist anymore*.
 
-but as it turns out, to the shock and disappoint of dozens of retro computer enthusiasts, almost all modern PC case doesn't have 5.25 inch bay anymore! there is just a blank space there. those who did does not support full height drive anymore as well, as they are optimised for optical drives and have half-height drives that prevent full height drives to be inserted. 
+The main culprit is 5.25" bays. I need 4 of them to hold the two drives, and they are simply extinct from most modern gaming cases. Instead there is just a blank space where it used to be.
 
-!!MEDIA TODO: screenshots of PC cases on amazon or newegg or uk equivalent?
+Just when I thought modern cases were a dead end, I stumbled upon something I completely missed: **open-frame cases**!
 
-I want my dual full-height drives, that means four(!) 5.25 inch bays! and its safe to say i wasnt able to find any gaming cases on sale today with that.
+Some of them are basically some scaffolding for mining rigs, but one particular case really caught my eye, the Thermaltake Core P3 TG Snow:
 
-I then decided to turn my attention to a little eariler, and got myself a case from early 2000s. A handsome looking aluminum coolermaster full-size case. it has 4 bays and everything i need. its a nice case for a period build but still leaves me a bit cold. the major theme of this build is to contrast the 40 years old computer with modern enclosure, and using a 20 years old case just wasnt going to cut it.
+!!MEDIA TODO: screenshots of that case
 
-!!MEDIA TODO: Photo of my coolermaster case
+* I really like its striking yet minimalist design, juxtapose neatly with 1980s technology, and also a nice break from the today's bland "gaming black".
 
-then during another scrolling session of looking at PC cases, I stumbled upon something i never thought of: open-frame cases!
+* It puts the motherboard on display front-and-center, instead of having to look through a window into a box in conventional cases. Much less claustrophobic.
 
-!!MEDIA TODO: screenshots of listings of open frame cases
+* There are lots of space to work with, and everything is modular. PCI bracket blocking the ports? Simply don't install it!
 
-striking design, minimalist and thoroughly modern
-lots of space to work with, easier to work on than a cramped regular case
-more flexible mounting not having to worry about side of the case and cutting stuff out
-more visibility for the motherboard and internals since everything is on display
-on-the-nose gaming image? perfect contrast
+* And most importantly, the mounting holes for water cooling fans are perfect for mounting 5.25" inch drives! I doubt they'll line up but I can always make a bracket.
 
-i looked at several designs, Thermaltake Core P3 TG Snow caught my eye the most:
+It's not cheap, but I really see it as the ideal case for this project, so I ordered one.
 
-!!MEDIA TODO: screenshots of Thermaltake Core P3 TG Snow case, go find it on the official website
-
-really like the clean and modern look and customisable design, can be configured to stand up, lay down, or wall mounted. (look at more blurb here), and most importantly, there are slots at the right edge of the case for mounting water cooling radiator fans, which looks perfect for mounting full-height drives! it will probably need some custom bracket fabrication but we'll get to that.
-
-theres a black one as well, i really like the white color, sets it apart from a sea of black boxs. black is so boring!
-
-the clean and minimalist design of the case also changed my aesthetic plan a bit, was originally going to go full-on RGB blast, but now i wanted it to be a bit more subtle?
-
-## Things to consider
-
-Still 
+The clean and minimalist design also changed my mind about the overall aesthetics. Instead of full-on obnoxious RGB blast, now I kind of want something more subtle and tasteful. It's still early, so I'll see what happens.
 
 ## Mounting motherboard
 
-I looked up ATX motherboard standard and measured the mounting holes on the BBC motherboard, and designed a simple adapter plate in inkscape, and had it cut out in acrylic. Much more ridgid than the hand drilled hardboard.
+I looked up ATX standard, and measured the mounting holes on the BBC motherboard. A simple adapter plate was quickly designed in inkscape and laser-cut in acrylic.
 
-the case arrived, i had it roughtly assembled, and installed a second hand RGB PSU, to my annoyance the RGB fan points to the bottom so it will be pretty much invisiable, but still, at least its white too!
+The case arrived, i had it roughtly assembled, and installed a second hand RGB PSU, to my annoyance the RGB fan points to the bottom so it will be pretty much invisible, but still, at least its white too!
 
 tried the adaptor plate, works fine and fits snugly.
 
 !!MEDIA TODO: Photo of MB mounted on case, nothing else
 
-Needed to remove tube connectors, write about low-temp alloy desoldering?
+## ATX4VC
 
-## power supply, ATX4VC
+Another thing to consider is how to power it
 
-Another neat side effect of putting it in a PC case is that I can do away with the old power supply which tends to blow up if the RIFA capacitor is not removed. Modern ATX PSU had all the required voltages. now 
+Another neat side effect of using a PC case is that I can do away with the old power supply which tends to blow up if the RIFA capacitor is not removed. Modern ATX PSU had all the required voltages. now 
 
 ## Did anyone say RGB?
 
