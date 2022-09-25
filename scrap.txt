@@ -1,3 +1,4 @@
+Another neat side effect of using a PC case is that I can do away with the old power supply which tends to blow up if the RIFA capacitor is not removed. Modern ATX PSU had all the required voltages. now 
 
 
 * Striking yet minimalist design

@@ -187,19 +187,53 @@ The clean and minimalist design also changed my mind about the overall aesthetic
 
 ## Mounting motherboard
 
-I looked up ATX standard, and measured the mounting holes on the BBC motherboard. A simple adapter plate was quickly designed in inkscape and laser-cut in acrylic.
+I looked up ATX standard, and measured the mounting holes on the BBC motherboard. A simple adapter plate was designed in Inkscape and laser-cut in acrylic.
 
-The case arrived, i had it roughtly assembled, and installed a second hand RGB PSU, to my annoyance the RGB fan points to the bottom so it will be pretty much invisible, but still, at least its white too!
-
-tried the adaptor plate, works fine and fits snugly.
+The case soon arrived, I had the main chassis laid out, installed ATX standoffs, and tried out the adapter plate:
 
 !!MEDIA TODO: Photo of MB mounted on case, nothing else
 
-## ATX4VC
+It works! And already looks pretty good!
 
-Another thing to consider is how to power it
+I then installed the ATX PSU with RGB fans and modular cables. To my annoyance the RGB fan points downwards, so it is practically invisible with the case standing up. Anyway, at least it's white!
 
-Another neat side effect of using a PC case is that I can do away with the old power supply which tends to blow up if the RIFA capacitor is not removed. Modern ATX PSU had all the required voltages. now 
+Which brings us neatly to the next question: How are we going to power the motherboard?
+
+## Power to the Beeb
+
+BBC Micro motherboard only requires two voltages: +5V and -5V. The former is all that's needed for the system to work, and the latter is only used for sound and serial communication.
+
+Fortunately, 5V is readily available on a ATX PSU, and -5V can be derived from -12V with a simple 7905 linear regulator. The PSU itself can be turned on or off by shorting the green PWR_ON signal to ground. So nothing particularly difficult here. 
+
+One slight issue is that I want to use the power button on the PC case, which is momentary. That means I can't just hook it up to the PWR_ON pin, because it will only turn on while the button is held down.
+
+I thought about using a simple flip-flop to toggle the PWR_ON signal with button presses, and it rather quickly got out of hand. How about putting it on a PCB? What about button denouncing? I can put the 7905 regulator on there too! Might as well break out all the voltages! A fan header would be useful! What about RGB?
+
+## Enter USB4VC
+
+In the end, I decided to go all out and design a PCB specifically for using **ATX power supply on retro computers**.
+
+I call it ATX4VC, and it covers lots of
+
+* All voltages in one place: +12V, +5V, +3.3V, -5V, -12V
+
+* Fused output on +12V, +5V and +3.3V, using common car fuses.
+
+* Two 4-pin fan headers with PWM speed adjustment
+
+* DS18B20 temperature probe support
+
+* Fan speed: manual or temperature dependent
+
+* Two ARGB headers for fans and light strips, etc.
+
+* 2.5 inch form factor
+
+It went though A LOT of revisions, mostly refining the details and adding new features.
+
+More details and user manual on main article.
+
+Buy one here.
 
 ## Did anyone say RGB?
 
@@ -208,6 +242,10 @@ repair, intricate trace designs, would be very attractive to add backlight to th
 the light strip had shit adhensives that starts to peel off after a day or two, and i dont really like the hand-soldered look anyway, might as well go all out, so i designed a new PCB adaptor plate with built in RGB backlight.
 
 USB cable to carry power and data
+
+## Keyboards and gamepads
+
+## Motherboard modification
 
 ## Floppy drives, mounting and configurations
 
