@@ -229,34 +229,142 @@ I call it ATX4VC, and it covers lots of
 
 * 2.5 inch form factor
 
-It went though A LOT of revisions, mostly refining the details and adding new features.
-
 More details and user manual on main article.
 
 Buy one here.
 
+It breaks out all the common voltages used in vintage computers (12V, 5V, 3.3V, -5V, -12V) so I can use it to replace the 40 year old power supply with a tendency to blow up.
+
+I also added some convience features such as soft power button and power LED header, 4-pin fan headers with PWM speed control, addressable RGB(ARGB) support, fused outputs, and temperature probe fan curve.
+
+It is also in 2.5 inch bay form factor so it can fit into this PC case, and is smaller0 than most retro computer PSUs, which it aims to replace.
+
+the power button and LED header lets me plug the case header directly into it and control the power of the system.
+
+As such, the ATX4VC will be in charge of controlling the power and RGB lighting in this project.
+
+
 ## Did anyone say RGB?
 
-repair, intricate trace designs, would be very attractive to add backlight to the back of the motherboard. luckly the motherboard had no ground pours, making the traces extra visible. did a mockup by taping some RGB light strips, and it looked absolutly amazing.
+I did want to involve some RGB in this build, although it's slightly more difficult than usual. on a typical RGB build, the light comes from PSU, Memory, cpu, case, and water cooling fans.
 
-the light strip had shit adhensives that starts to peel off after a day or two, and i dont really like the hand-soldered look anyway, might as well go all out, so i designed a new PCB adaptor plate with built in RGB backlight.
+unfortunately, the usual avenue falls a bit short here.
 
-USB cable to carry power and data
+* we do have a RGB PSU, but its fan faces downwards, so not very visible
 
-## Keyboards and gamepads
+* nowhere to put RGB ram sticks
 
-## Motherboard modification
+* fans are not required for the Beeb, and they aren't very effective in open-frame cases anyway
 
-## Floppy drives, mounting and configurations
+* I can try light strips, but they tend to be a bit tacky, and hard to conceal in open-frame cases
 
-now to how to mount the drive, there are a bunch of slots on the case, so a simple right angle metal bracket should be sufficient. i went to my local hardware store and bought some mounting brackets, to my surprise they almost fit with out much modification at all, al though i had to drill some holes at the longer side to mount the drive. in the future i probably should have a proper bracket frabricated.
+so all in all, the RGB situation wasn't looking too hot. however, I stumbled upon something much better instead.
+
+while repairing a beeb motherboard, i shined a light from the back to check for solder bridges, the light passed through, beatifully liiminating the delicate and intricate design of all the traces on the circuit board. This is another happy coincidence that they did not use coppor ground planes or internal layers, both of which would block the light.
+
+the idea of adding a RGB backlight behind the entire motherboard immediately came to mind, it would reuiqre a lot of LEDs and possibly a huge circuitboard, but if the result looks good, it's worth the trouble in my book.
+
+Just for mockup, I cut some leftover RGB lightstrips to length and stuck them on the acrylic plate. the adhesives on those cheap strips are incrediably weak, still, they held just long enough so I can see how it looks like, and seeing it for the first time, it was incrediably striking, and I was in awe.
+
+more descriptions? soft defussion, intricate design of the traces, etc.
 
 
-floppy needs cable without twists
 
-one shugart 80-track and one tandon 40-track (from a IBM PC!), should cover everything.
+I went ahead to design a whole new ATX adaptor plate, this time as a whole circuit board with RGB LEDs evenly distributed. I also left a cutout under the keyboard connector, so the cables can exit underneath and not block the backlight. I also used a USB-C connector to carry the ARGB signal, as it is much neater to use the regular USBC cable.
 
-Molex connector just barely long enough.
+this is the biggest PCB I have ever designed, it is not very complicated, but did took me a while to solder all 168 LEDs by hand. Fortunately, everything lined up fine and it worked on the first revision, it gets blindingly bright when turned all the way up, and the motherboard looks amazing in front ot it, especially after adding different RGB animations. The light difusses nicely around the edge of the board, and the white case really makes the colour pop while remaining a classy and uncluttered wook, i'm exteremly happy with how it turned out. this kind of effects is simply not possible with modern moterhboards.
+
+
+## USB Keyboards on BBC Micro?
+
+With such a modern case, it's only natural that I want to use this BBC micro just like a real PC with USB keyboard and gamepad.
+
+As if by total coincidence, I happen to have a project for exactly that! what are the odds!
+
+The USB4VC project allows modern USB keyboards, mouse, and gamepads to be used on vintage computers. The modular design supports a wide range of computers with protocol cards. 
+
+At the time of writing, P-cards are availble for IBM PC compatible(ps/2 keyboard/mouse, XT keyboard, serial mouse, 15pin gamepads) and apple macintosh lines. does it need to be this detailed?
+
+Your can read more about the project here.
+
+Anyway, I designed a new protocol card for the BBC Micro, supporting its keyboard and joystick.
+
+the keyboard for BBC micro is a very clever piece of design, it can scan its matrix atonomously without CPU involvment, an interrupt is generated when keypress is detected, only then CPU starts to scan the matrix to see which key is pressed.
+
+That means the timing is very tight once the 6502 starts keyboard query, I actually overclocked the microcontroller to be on the safe side, but in the end it does work rather nicely.
+
+I also had to remap a few buttons since the keyboard layout is different on PC keyboards compared to BBC micro.
+
+I used to on0board DAC for the joystick analog axies, which works fine, although careful calibration is needed to ensure the positiion is centred, as most games dont have calibration themselves.
+
+The prototype p-card works fine with some bodge wires, and those will be fixed in the final version.
+
+ 
+## Mounting floppy drives
+
+another0 goal of this project is to have real working full-height 5.25" floppy drives in the case. I had two candidates, a 80-track shugart model ??? from the frankenbeeb, and a 40 track Tandon model ??? from a IBM PC XT. With both 40 and 80 tracks, it should cover the majority of floppys I want to read.
+
+I added a ???? floppy controller0 chip and tested out the setup. After some trail and error it seems that for the dual floppy to work, the ribbon cable needs to have NO TWIST, and the drive ID set manually with the on-board jumper. a terminating resistor might also be needed at the last drive on the cable. 
+
+The acorn DFS treats each side of a floppy as different drives, so physical Drive ID 0 will be DFS drive 0 and 2, while drive ID 1 will be drive 1 and 3.
+
+I tested out the setup seperately, and it seemed to work, so now I need to figure out how to mount them on the case.
+
+fortunately the case has plenty of slots near the font for mounting water cooling heatsinks and fans, and looks like a simple metal bracket is all that;s needed.
+
+I went to the local hardware store and bought some angle brackets that looked close enough, I then measured and drilled the holes for the drive. A one-piece solid metal bracket would be preferable, but i wasnt able to find off-the-shelf parts, custom fabrication would have been a lot more expensive.
+
+anyway, the drives mounts fine, however when I line up the faceplate of the drive with the front of the case, the connectors on the back of the motherboard prevents the ribbon cable from being inserted. Still, it;s not a showstopper, I can fix that along with a few other planned modifcations. 
+
+Speaking of which...
+
+
+## Motherboard modifications
+
+A few modifications were carrid out on the motherboard, mostly for anesstenic reasons. they are completely optional and  entirely reversible, so keep that in mind if you want to try something similar yourslef.
+
+### Power connector
+
+BBC motherboard have power supply posts where the cable plugs into. in total there are three 5V and 3 GND posts, and a single -5V post. All your have to do is feed them the correct voltage.
+
+the simpllist and non-destructive way is just
+
+run wires directly to it from the ATX PSU, but it would creat some clutter0 and block the backlight, so I decided to go a bit further and desolder all the posts and run the cables on the back of the PCB. I used plenty of flux, added some new solder, and heated up the post and pulled it out. I then sucked the solder out of the hole, cleaned it up, and ran power cables to connect all the rails together.
+
+make sure the cable you use is thick enough to carry at least 2A of current, and double check you didn't accidently cross the 5V and GND and short them. also make sure the exposed conductor is not shorting on nearby traces and components.
+
+with the posts removed and new cabling in the back, I can now simply plug it into the terminal blocks on ATX4VC and power the motherboard that way.
+
+### reLOCATING pin headers
+
+As the connectors on the back of the motherboard were blocking the floppy drive, I simply desoldered and replaced them with straight headers. they will still work but takes less space. You The desoldering can be a bit harsh on the PCB, so dont do this unless you run into unavoidable space constrains.
+
+I also desoldered the keyboard pin header and installed it upside down, so the long end is pointing downwards. this way I can connect the keyboard cable from behind through the cutout on the ATX RGB adaptor plate, elinating another item to block the backlight. anything for that clean look!
+
+## Putting it all together
+
+Time to finally put everything together! I gave the motehrbaord another wash to clean off the sticky flux residues, fed the floppy and power cable through the adaptor plate cutout to make sure they dont block backlight. I then mounteed the ATX4VC on the spare 2.5 inch drive bay. It fits nicely, and powers the RGB backlight and USB4VC through two USB-C cables.
+
+the two floppy disk drives now fits perfectly with the header removed, although the power cable is just barely long enough.
+
+I also uesd RGB2HDMI to upscale the video output to HDMI.
+
+the turboMMC makes playing games even easier on BBC micro by booting from SD card with a interaction menu. and 
+
+## conclusion
+
+It;s amazing how quickly a simple idea can get out of hand, I started out just wanting to put a BBC micro mnotherboard into a ATX case, and in the end I developed a new protocol card for USB4VC, a general purpose ATX controller for vintage computers, and a custom RGB backlight plate adaptor. I took this idea and really pushed to see how far I can go.
+
+none of this it toally necessary, it is still a plain old BBC micro with a slight upgrade and some disk drives. but just like the torch computer and the frankenbeeb, the whole ordeal of dragging it kicking and screaming to the 21st centry has made it much more special, and I guess this is what modification is all about.
+
+originality is an important part of retro computing, and many classic machines had been butchered to put newer system in them. 
+
+however, i do find many period modifications rather charming, such as the cursed mac, and I feel that if the process is non-destructive and reversible, i woulnd mind to have a bit of fun, especially with giving a bare motherboard a home instead of having it remain as spare parts.
+
+still, i learned a lot about the history and clever design of this machine, and devloped something that hopefully benefits the community at large. and with everything put together, it looks every bit as good as i imaghined from the beginning.
+
+As for what's next, i might add a torch Z80 card to add CP/M capability next, but to be honest, i spent so much time building this thing, I have't had much time actually enjoying the machine itself, so I guess that's what coming up next.
+
 
 ## putting it all together
 
