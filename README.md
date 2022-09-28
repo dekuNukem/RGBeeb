@@ -24,13 +24,13 @@ BBC Micro inside a open-frame ATX PC case
 
 ## BBC Micro: (A quick) Introduction
 
+![Alt text](photos/mybeeb.jpeg)
+
 ### History and Legacy
 
-* In early 1980s, BBC started the *Computer Literacy Project*, aiming to introduce people to computers and show what they can do.
+* In early 1980s, British Broadcasting Corporation(BBC) started the *Computer Literacy Project*, aiming to introduce people to computers and show what they can do.
 
 * **[Acorn Computer](https://en.wikipedia.org/wiki/Acorn_Computers)**'s design won out, and was developed into **[BBC Microcomputer](https://en.wikipedia.org/wiki/BBC_Micro)**, often nicknamed the "**Beeb**".
-
-TAKE MY OWN PHOTO OF BBC MICRO, LOW ANGLE SO THE IT CAN BE CROPPED IS SHORT
 
 * BBC Micro was featured heavily in [TV programmes](https://en.wikipedia.org/wiki/The_Computer_Programme), and became ubiquitous in education environments in UK.
 
@@ -114,69 +114,74 @@ This way,
 
 * Interesting juxtaposition between 40-year-old hardware and modern case.
 
-* Very much in the spirit of modding previously shown.
+* Very much in the spirit of wacky modding of the era.
 
 * Honestly, why not?
 
-## A Happy Coincidence
+## A Happy Coincidence?
 
 Obviously, the most important part is mounting the motherboard. So I found a spare and did some measurements.
 
-Imagine my surprise when I found that the BBC micro motherboard is **almost identical in size** as full-size ATX specification!
+Imagine my surprise when it turns out the BBC micro motherboard is **almost identical in size** as the full-size ATX specification!
 
-PHOTO OF BEEB MB AND AN ATX MB, MAYBE SVG COMPARISON
+![Alt text](photos/comp.png)
 
-![Alt text](photos/atxbbc.png)
+Either it's one hell of a coincidence, or Acorn was so ahead of its time that it predicted ATX form factor by **14 years**!
 
-Either it's one hell of a coincidence, or Acorn was so ahead of its time that it predicted ATX form factor **14 years** ahead!
+Still in disbelief, I placed the BBC motherboard inside a ATX case, and low and behold:
 
-Still in disbelief, I placed the BBC motherboard inside a ATX case, and low and behold, it fits almost perfectly!
+![Alt text](photos/mock.jpeg)
 
-!!MEDIA TODO: Photo of motherboard inside the shit PC case, NEW PHOTO better illustrates the point.
+It fits almost perfectly! The RGB, cassette, serial, composite and RF ports line up with the I/O window, and there are space for all the connectors in the back! This is almost too good to be true.
 
-The RGB, cassette, serial, composite and RF ports even line up with the I/O window! And there are also space for all the connectors in the back! This is almost too good to be true.
-
-Although in this particular case(!!), the PCI bracket is blocking the analogue and econet port, and 5.25" drives won't fit since is a bit too short.
+Although in this particular case(!!), the PCI bracket is blocking the analogue and econet port, and the long 5.25" drive doesn't go all the way in.
 
 Which brings us neatly to the next part: What case *should* I use?
 
 ## Case Selection
 
-Initially, I wanted one of those absolutely obnoxious gaming cases kitted out with RGB peripherals straight out of [r/pcmasterrace](https://old.reddit.com/r/pcmasterrace/), just for maximum hilarity.
+Initially, I wanted one of those absolutely obnoxious gaming cases kitted out with RGB peripherals straight out of [r/pcmasterrace](https://old.reddit.com/r/pcmasterrace/), just for maximum hilarity. Something [like this:](https://old.reddit.com/r/gamingpc/comments/jb8w25/just_rgb_everything/
+)
 
-!!MEDIA TODO: Photo of RGB CASE, and a photo from PCMR reddit
+![Alt text](photos/pcmr.jpg)
 
 So I set out to look for a case that's:
 
-* Available brand new
+* Available new
 
 * Full size ATX or larger
 
 * Gaming aesthetics (RGB, Glass panel, etc)
 
-* Has four 5.25" bays for two full-height disk drives
+* Has 5.25" bays for two full-height disk drives
 
-It didn't seem like a tall order, but after sifting through dozens of pages on amazon and newegg, I came to the devastating conclusion such case *simply does not exist anymore*.
+It didn't seem like a tall order, but after sifting through dozens of pages on amazon and newegg, I came to the devastating conclusion such case ***simply does not exist anymore***.
 
-The main culprit is 5.25" bays. I need 4 of them to hold the two drives, and they are just extinct from most modern gaming cases. Instead there is just a blank space where it used to be.
+![Alt text](photos/cases.png)
+
+As you can see, apparently 5.25" bays simply isn't thing anymore! Instead there is just a blank space where it used to be, to the horror of *dozens* of retro modding enthusiasts.
+
+(yes I know there's a case with 2 bays right in that photo, but I need 4 for two drives)
+
+-----
 
 Just when I thought modern cases were a dead end, I stumbled upon something I completely missed: **open-frame cases**!
 
-Some of them are basically some scaffolding for mining rigs, but one particular case really caught my eye, the Thermaltake Core P3 TG Snow:
+Some of them are just scaffolding for mining rigs, but one in particular really caught my eye, the [Thermaltake Core P3 TG Snow](https://uk.thermaltake.com/core-p3-snow-edition.html):
 
-!!MEDIA TODO: screenshots of that case
+![Alt text](photos/p3.png)
 
-* I really like its striking yet minimalist design, juxtapose neatly with 1980s technology, and also a nice break from the today's bland "gaming black".
+* I really like its striking yet minimalist design, juxtapose neatly with the 1980s technology. It's also a nice break from today's rather bland "gaming black".
 
 * It puts the motherboard on display front-and-center, instead of having to look through a window into a box in conventional cases. Much less claustrophobic.
 
 * There are lots of space to work with, and everything is modular. PCI bracket blocking the ports? Simply don't install it!
 
-* And most importantly, the mounting holes for water cooling fans are perfect for mounting 5.25" inch drives! I doubt they'll line up but I can always make a bracket.
-
-It's not cheap, but I really see it as the ideal case for this project, so I ordered one.
+* And most importantly, the slots near the front edge are perfect for mounting 5.25" inch drives! I doubt they'll line up but I can always make a bracket.
 
 The clean and minimalist design also changed my mind about the overall aesthetics. Instead of full-on obnoxious RGB blast, now I kind of want something more subtle and tasteful. It's still early, so I'll see what happens.
+
+It's not cheap, but I really liked it, so I ordered one.
 
 ## Mounting motherboard
 
