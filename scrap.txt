@@ -1,3 +1,14 @@
+* Everything's in one place, no more separate boxes.
+
+* Juxtaposition of old and new. 40 year old hardware in cutting edge 
+
+* very much in the spirit
+
+It sounded like an outrageous idea, but after bit of thinking, I felt it wasn't completely unrealistic.
+
+The 5.25" floppy drives are designed to go into 5.25" bays, so no problem there. But what about the motherboard itself? I found a spare and did some measurements.
+
+
 Another neat side effect of using a PC case is that I can do away with the old power supply which tends to blow up if the RIFA capacitor is not removed. Modern ATX PSU had all the required voltages. now 
 
 

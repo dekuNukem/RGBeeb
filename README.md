@@ -36,7 +36,7 @@ TAKE MY OWN PHOTO OF BBC MICRO, LOW ANGLE SO THE IT CAN BE CROPPED IS SHORT
 
 ![Alt text](photos/tv.png)
 
-* A common sight in school computer labs, it introduced a whole generation to computing, and inspired many bright minds in related fields.
+* A common sight in school computer labs, it introduced a whole generation to computing, and inspired many bright minds.
 
 * Acorn went on to develop the **Acorn RISC Machine**, or [ARM](https://en.wikipedia.org/wiki/ARM_architecture_family) in short (Yes, *that* ARM), which are now found in virtually all smartphones, 32-bit microcontrollers, and even desktop PCs.
 
@@ -52,11 +52,11 @@ TAKE MY OWN PHOTO OF BBC MICRO, LOW ANGLE SO THE IT CAN BE CROPPED IS SHORT
 
 First of all, all modifications here are **non-destructive and reversible**. So no Beebs were harmed during the creation of this project!
 
-What's more, modifying BBC Micros certainly was not unheard of even back then! One great example is the original [Torch Communicator](https://en.wikipedia.org/wiki/Torch_Computers):
+What's more, modifying BBC Micros was not unheard of even back then! One great example is the original [Torch Communicator](https://en.wikipedia.org/wiki/Torch_Computers):
 
 ![Alt text](photos/torch.jpeg)
 
-A sleek business machine with integrated display, keyboard, and disk drives, running a version CP/M called CPN. What's not to like?
+A sleek business machine running CP/M with integrated display, keyboard, and disk drives. What's not to like?
 
 At this point, eagle-eyed viewers might notice the UI looks suspiciously familiar! The secret is revealed looking inside the case [thanks to this video](https://www.youtube.com/watch?v=pNdYtTvEAQs):
 
@@ -64,7 +64,7 @@ At this point, eagle-eyed viewers might notice the UI looks suspiciously familia
 
 Yep, they literally nicked the motherboard from a BBC Micro and built their own computer around it!
 
-Despite the humble root, the Torch Communicator was a fairly advanced machine, having a Z80 co-processor running CP/M with networking capabilities, and it was the [first microcomputer](https://nosher.net/archives/computers/micro_decision_1982-05_002) to be fully approved by British Telecom for connection to the telephone and Telex network, in 1982!
+Despite the humble root, the Torch Communicator was a fairly advanced machine, having a Z80 co-processor running CP/M with networking capabilities, and it was the [first microcomputer](https://nosher.net/archives/computers/micro_decision_1982-05_002) to be fully approved by British Telecom to connect to the telephone and Telex network, in 1982!
 
 Torch Computer went on to develop their [own machines](https://en.wikipedia.org/wiki/Torch_Computers#Torch_Triple_X) later. But this is a great example of building upon an existing computer to expand its capabilities.
 
@@ -76,17 +76,15 @@ Here is a machine I picked up locally via ebay:
 
 ![Alt text](photos/ebay.png)
 
-It's a Beeb with ... a separate keyboard and hinged case??
+It's a Beeb with ... a separate keyboard and boxy case??
 
-The top half of the Beeb was replaced with a flat hinged lid, now resembling a small PC case. And the keyboard is now in its own metal enclosure with ribbon cable (???).
+The top half of the Beeb was replaced with a flat lid. And the keyboard is in its own metal enclosure with a ribbon cable (???).
 
 ![Alt text](photos/case.png)
 
-The new flat case most likely allows the computer, disk drive and monitor to be stacked on top each other, saving valuable desk space.
+The new boxy case most likely allows the computer, disk drive and monitor to be stacked on top each other, saving valuable desk space.
 
 A look inside revealed big upgrades, fully kitted out with sidewise expansion card, floppy disc controller, battery backup, a standalone audio jack, and speech synthesis chips. And just look at all the ROMs!
-
-The toggle switch is wired up to a jumper on the sidewise card, most likely for switching ROM banks.
 
 ![Alt text](photos/hinge.jpeg)
 
@@ -102,42 +100,37 @@ I removed the RIFA caps from the PSU, took lots of photos for documentation, cle
 
 ![Alt text](photos/roms.jpeg)
 
-The disc drive works too! I decided not to risk the original power supply, and used a modern ATX PSU to power the drives. And the Beeb read the discs just fine:
+The disc drive works too! I decided not to risk its original power supply, and powered the drives with a modern ATX PSU. The FrankenBeeb read the discs just fine:
 
 ![Alt text](photos/mess2.jpg)
 
 As you can see, it's quite a mess indeed. It was at this point that an idea occurred to me:
 
-***Wouldn't it be nice if all those can go into a single ATX PC case?***
+***Wouldn't it be nice if all those can go into a single ATX PC case?*** 
 
-* Everything's in one place, no more separate boxes.
+This way,
 
-* Juxtaposition of old and new. 40 year old hardware in cutting edge 
+* Everything's in one place, cleaner look.
 
-* very much in the spirit
+* Interesting juxtaposition between 40-year-old hardware and modern case.
 
-## A Happy Coincidence?
+* Very much in the spirit of modding previously shown.
 
-That sure sounded like an outrageous idea, but after bit of thinking, I felt that it wasn't completely unrealistic.
+* Honestly, why not?
 
-* The 5.25" floppy drives are designed to go into 5.25" bays, so no problem there.
+## A Happy Coincidence
 
-* BBC Micro motherboard needs +5V to work, which ATX PSU have.
+Obviously, the most important part is mounting the motherboard. So I found a spare and did some measurements.
 
-* It also need -5V for sound and RS423 serial, but it can be easily derived from the -12V rail
-
-So far so good, but what about the motherboard itself? I found a spare and did some measurements.
-
-Imagine my surprise when I found that BBC micro motherboard has **almost identical size** to the full-size ATX specification!
+Imagine my surprise when I found that the BBC micro motherboard is **almost identical in size** as full-size ATX specification!
 
 PHOTO OF BEEB MB AND AN ATX MB, MAYBE SVG COMPARISON
 
 ![Alt text](photos/atxbbc.png)
 
+Either it's one hell of a coincidence, or Acorn was so ahead of its time that it predicted ATX form factor **14 years** ahead!
 
-BBC is 310mm x 230mm, and ATX is 305x244mm. Either it's one hell of a coincidence, or Acorn was so ahead of its time that it predicted ATX form factor **14 years** ahead!
-
-Still in disbelief, I placed a spare BBC motherboard inside a random ATX case, and low and behold, it fits almost perfectly!
+Still in disbelief, I placed the BBC motherboard inside a ATX case, and low and behold, it fits almost perfectly!
 
 !!MEDIA TODO: Photo of motherboard inside the shit PC case, NEW PHOTO better illustrates the point.
 
@@ -145,17 +138,17 @@ The RGB, cassette, serial, composite and RF ports even line up with the I/O wind
 
 Although in this particular case(!!), the PCI bracket is blocking the analogue and econet port, and 5.25" drives won't fit since is a bit too short.
 
-Which brings us neatly to the question: What case *should* I use?
+Which brings us neatly to the next part: What case *should* I use?
 
 ## Case Selection
 
-Initially, I wanted one of those absolutely obnoxious gaming cases kitted out with RGB peripherals like something straight out of r/pcmasterrace, just for maximum hilarity.
+Initially, I wanted one of those absolutely obnoxious gaming cases kitted out with RGB peripherals straight out of [r/pcmasterrace](https://old.reddit.com/r/pcmasterrace/), just for maximum hilarity.
 
 !!MEDIA TODO: Photo of RGB CASE, and a photo from PCMR reddit
 
 So I set out to look for a case that's:
 
-* I can buy brand new
+* Available brand new
 
 * Full size ATX or larger
 
@@ -163,9 +156,9 @@ So I set out to look for a case that's:
 
 * Has four 5.25" bays for two full-height disk drives
 
-Didn't seem like a tall order, but after sifting through dozens of pages on amazon and newegg, I came to the devastating conclusion such case *simply doesn't exist anymore*.
+It didn't seem like a tall order, but after sifting through dozens of pages on amazon and newegg, I came to the devastating conclusion such case *simply does not exist anymore*.
 
-The main culprit is 5.25" bays. I need 4 of them to hold the two drives, and they are simply extinct from most modern gaming cases. Instead there is just a blank space where it used to be.
+The main culprit is 5.25" bays. I need 4 of them to hold the two drives, and they are just extinct from most modern gaming cases. Instead there is just a blank space where it used to be.
 
 Just when I thought modern cases were a dead end, I stumbled upon something I completely missed: **open-frame cases**!
 
@@ -242,7 +235,6 @@ It is also in 2.5 inch bay form factor so it can fit into this PC case, and is s
 the power button and LED header lets me plug the case header directly into it and control the power of the system.
 
 As such, the ATX4VC will be in charge of controlling the power and RGB lighting in this project.
-
 
 ## Did anyone say RGB?
 
