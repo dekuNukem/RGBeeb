@@ -187,6 +187,9 @@ It's not cheap, but I really liked it, so I ordered one.
 
 I looked up ATX standard, and measured the mounting holes on the BBC motherboard. A simple adapter plate was designed in Inkscape and laser-cut in acrylic.
 
+![Alt text](photos/acrylic.png)
+
+
 The case soon arrived, I had the main chassis laid out, installed ATX standoffs, and tried out the adapter plate:
 
 !!MEDIA TODO: Photo of MB mounted on case, nothing else
