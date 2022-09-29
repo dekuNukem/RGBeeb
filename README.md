@@ -70,7 +70,7 @@ Torch Computer went on to develop their [own machines](https://en.wikipedia.org/
 
 ## The FrankenBeeb
 
-Of course, Beeb tinkering did not stop with commercial companies, apparently plenty enterprising users had a go as well!
+Of course, Beeb tinkering did not stop with commercial companies, plenty enterprising users had a go as well!
 
 Here is a machine I picked up locally via ebay:
 
@@ -122,7 +122,7 @@ This way,
 
 Obviously, the most important part is mounting the motherboard. So I found a spare and did some measurements.
 
-Imagine my surprise when it turns out the BBC micro motherboard is **almost identical in size** as the full-size ATX specification!
+Imagine my surprise when it turns out the BBC micro motherboard is **almost identical in size** as full-size ATX!
 
 ![Alt text](photos/comp.png)
 
@@ -140,12 +140,12 @@ Which brings us neatly to the next part: What case *should* I use?
 
 ## Case Selection
 
-Initially, I wanted one of those absolutely obnoxious gaming cases kitted out with RGB peripherals straight out of [r/pcmasterrace](https://old.reddit.com/r/pcmasterrace/), just for maximum hilarity. Something [like this:](https://old.reddit.com/r/gamingpc/comments/jb8w25/just_rgb_everything/
+Initially, I wanted one of those absolutely obnoxious gaming cases kitted out with RGB straight out of [r/pcmasterrace](https://old.reddit.com/r/pcmasterrace/), just for maximum hilarity. Something [like this:](https://old.reddit.com/r/gamingpc/comments/jb8w25/just_rgb_everything/
 )
 
 ![Alt text](photos/pcmr.jpg)
 
-So I set out to look for a case that's:
+So I went to look for a case that's:
 
 * Available new
 
@@ -165,21 +165,21 @@ As you can see, apparently 5.25" bays simply isn't thing anymore! Instead there 
 
 -----
 
-Just when I thought modern cases were a dead end, I stumbled upon something I completely missed: **open-frame cases**!
+Just when I thought modern cases were a lost cause, I stumbled upon something I completely missed: **open-frame cases**!
 
 Some of them are just scaffolding for mining rigs, but one in particular really caught my eye, the [Thermaltake Core P3 TG Snow](https://uk.thermaltake.com/core-p3-snow-edition.html):
 
 ![Alt text](photos/p3.png)
 
-* I really like its striking yet minimalist design, juxtapose neatly with the 1980s technology. It's also a nice break from today's rather bland "gaming black".
+* I really like its striking yet minimalist design, juxtapose neatly with the 1980s technology. It's also a nice break from today's rather bland "gaming black" aesthetics.
 
 * It puts the motherboard on display front-and-center, instead of having to look through a window into a box in conventional cases. Much less claustrophobic.
 
 * There are lots of space to work with, and everything is modular. PCI bracket blocking the ports? Simply don't install it!
 
-* And most importantly, the slots near the front edge are perfect for mounting 5.25" inch drives! I doubt they'll line up but I can always make a bracket.
+* And most importantly, the slot cutouts near the front edge are perfect for mounting 5.25" inch drives!
 
-The clean and minimalist design also changed my mind about the overall aesthetics. Instead of full-on obnoxious RGB blast, now I kind of want something more subtle and tasteful. It's still early, so I'll see what happens.
+The clean and minimalist design also changed my mind about the overall aesthetics. Instead of full-on obnoxious RGB blast, now I kind of want something more subtle and tasteful. It's still early, so I'll see what I can do.
 
 It's not cheap, but I really liked it, so I ordered one.
 
