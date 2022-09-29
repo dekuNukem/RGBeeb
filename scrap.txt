@@ -8,6 +8,7 @@ It sounded like an outrageous idea, but after bit of thinking, I felt it wasn't 
 
 The 5.25" floppy drives are designed to go into 5.25" bays, so no problem there. But what about the motherboard itself? I found a spare and did some measurements.
 
+It breaks out all the common voltages in vintage computers, and has PWM fan and ARGB for cooling and aesthetic upgrades. It also fit into the 2.5" bay of a PC case, with standard power button and LED headers.
 
 Another neat side effect of using a PC case is that I can do away with the old power supply which tends to blow up if the RIFA capacitor is not removed. Modern ATX PSU had all the required voltages. now 
 

@@ -159,7 +159,7 @@ It didn't seem like a tall order, but after sifting through dozens of pages on a
 
 ![Alt text](photos/cases.png)
 
-As you can see, apparently 5.25" bays simply isn't thing anymore! Instead there is just a blank space where it used to be, to the horror of *dozens* of retro modding enthusiasts.
+As you can see, apparently 5.25" bays just isn't thing anymore! Instead there is a blank space where it used to be, to the horror of *dozens* of retro modding enthusiasts.
 
 (yes I know there's a case with 2 bays right in that photo, but I need 4 for two drives)
 
@@ -183,82 +183,94 @@ The clean and minimalist design also changed my mind about the overall aesthetic
 
 It's not cheap, but I really liked it, so I ordered one.
 
-## Mounting motherboard
+## ATX Adapter Plate
 
 I looked up ATX standard, and measured the mounting holes on the BBC motherboard. A simple adapter plate was designed in Inkscape and laser-cut in acrylic.
 
 ![Alt text](photos/acrylic.png)
 
-
 The case soon arrived, I had the main chassis laid out, installed ATX standoffs, and tried out the adapter plate:
 
-!!MEDIA TODO: Photo of MB mounted on case, nothing else
+![Alt text](photos/testmount.jpeg)
 
-It works! And already looks pretty good!
+It works! And already looks pretty good! I really like how modular this case is. 
 
-I then installed the ATX PSU with RGB fans and modular cables. To my annoyance the RGB fan points downwards, so it is practically invisible with the case standing up. Anyway, at least it's white!
+I then installed the ATX power supply. To my annoyance the RGB fan points downwards, so it is practically invisible with the case standing up. But at least it's white!
 
-Which brings us neatly to the next question: How are we going to power the motherboard?
+![Alt text](photos/atxpsu.jpeg)
 
 ## Power to the Beeb
 
-BBC Micro motherboard only requires two voltages: +5V and -5V. The former is all that's needed for the system to work, and the latter is only used for sound and serial communication.
+BBC Micro motherboard requires two voltages: +5V and -5V. The former powers all the chips, and the latter only for sound and serial communication.
 
-Fortunately, 5V is readily available on a ATX PSU, and -5V can be derived from -12V with a simple 7905 linear regulator. The PSU itself can be turned on or off by shorting the green PWR_ON signal to ground. So nothing particularly difficult here. 
+Fortunately, 5V is readily available on a ATX PSU, and -5V can be derived from -12V with a simple 7905 linear regulator. The PSU itself can be controlled by shorting the green PS_ON signal to ground.
 
-One slight issue is that I want to use the power button on the PC case, which is momentary. That means I can't just hook it up to the PWR_ON pin, because it will only turn on while the button is held down.
+The most basic circuit would be something like this:
 
-I thought about using a simple flip-flop to toggle the PWR_ON signal with button presses, and it rather quickly got out of hand. How about putting it on a PCB? What about button denouncing? I can put the 7905 regulator on there too! Might as well break out all the voltages! A fan header would be useful! What about RGB?
+![Alt text](photos/basiccircuit.png)
 
-## Enter USB4VC
+One slight issue is that I want to use the power button on the PC case, which is momentary. That means I can't just hook it up to the PS_ON pin, as it will only turn on while the button is held down.
 
-In the end, I decided to go all out and design a PCB specifically for using **ATX power supply on retro computers**.
+I thought about using a simple flip-flop to toggle the PWR_ON signal with button presses, and it rather quickly got out of hand. How about putting it on a PCB? What about button denouncing? I can put the 7905 on there too! Might as well break out all the voltages! A fan header would be useful! What about RGB?
 
-I call it ATX4VC, and it covers lots of
+## Enter ATX4VC
 
-* All voltages in one place: +12V, +5V, +3.3V, -5V, -12V
+In the end, I decided to go all out and design a controller specifically for using **ATX power supply on retro computers**, amply named **ATX4VC**:
 
-* Fused output on +12V, +5V and +3.3V, using common car fuses.
+![Alt text](photos/atx4vc.jpeg)
 
-* Two 4-pin fan headers with PWM speed adjustment
+It combines lots of convenient features in one place:
 
-* DS18B20 temperature probe support
+* All common voltages: +12V, +5V, +3.3V, -5V, -12V.
 
-* Fan speed: manual or temperature dependent
+* Soft power button and power LED headers
 
-* Two ARGB headers for fans and light strips, etc.
+* Two Addressable RGB(ARGB) headers
 
-* 2.5 inch form factor
+* Temperature probe support
 
-More details and user manual on main article.
+* Two 4-pin PWM fan headers, manual speed adjust or temperature dependent
 
-Buy one here.
+* Open-source!
 
-It breaks out all the common voltages used in vintage computers (12V, 5V, 3.3V, -5V, -12V) so I can use it to replace the 40 year old power supply with a tendency to blow up.
+Click me to buy one / more details / user manual.
 
-I also added some convience features such as soft power button and power LED header, 4-pin fan headers with PWM speed control, addressable RGB(ARGB) support, fused outputs, and temperature probe fan curve.
+Altogether, it's an all-in-one convenient package for replacing old unreliable (and sometime explosive!) power supplies with modern ATX PSUs, with provision for cooling and aesthetic upgrades.
 
-It is also in 2.5 inch bay form factor so it can fit into this PC case, and is smaller0 than most retro computer PSUs, which it aims to replace.
+--------
 
-the power button and LED header lets me plug the case header directly into it and control the power of the system.
+It also fits neatly in a 2.5 inch drive bay, I hooked up an RGB fan and power button and LED headers, and pressed the button.
 
-As such, the ATX4VC will be in charge of controlling the power and RGB lighting in this project.
+![Alt text](photos/fantest.jpeg)
+
+It works! PSU turns on, fan spins and lights up, and voltage rails are live.
+
+We still need to connect it to the motherboard though, which will come later.
+
 
 ## Did anyone say RGB?
 
-I did want to involve some RGB in this build, although it's slightly more difficult than usual. on a typical RGB build, the light comes from PSU, Memory, cpu, case, and water cooling fans.
+I do want to involve some RGB in this build, although here it's slightly more difficult than usual. On a typical RGB build, the light comes from:
 
-unfortunately, the usual avenue falls a bit short here.
+* PSU / Case fans 
 
-* we do have a RGB PSU, but its fan faces downwards, so not very visible
+* CPU cooler or water cooling radiator fans
 
-* nowhere to put RGB ram sticks
+* RGB RAM sticks
 
-* fans are not required for the Beeb, and they aren't very effective in open-frame cases anyway
+* Light strips
+
+However in this case:
+
+* we do have a RGB PSU, but its fan faces downwards, so not very visible.
+
+* RGB RAM sticks not applicable
+
+* Fans are not really required for the Beeb
 
 * I can try light strips, but they tend to be a bit tacky, and hard to conceal in open-frame cases
 
-so all in all, the RGB situation wasn't looking too hot. however, I stumbled upon something much better instead.
+So all in all, the RGB situation wasn't looking too hot. however, I stumbled upon something much better instead.
 
 while repairing a beeb motherboard, i shined a light from the back to check for solder bridges, the light passed through, beatifully liiminating the delicate and intricate design of all the traces on the circuit board. This is another happy coincidence that they did not use coppor ground planes or internal layers, both of which would block the light.
 
@@ -299,7 +311,6 @@ I used to on0board DAC for the joystick analog axies, which works fine, although
 
 The prototype p-card works fine with some bodge wires, and those will be fixed in the final version.
 
- 
 ## Mounting floppy drives
 
 another0 goal of this project is to have real working full-height 5.25" floppy drives in the case. I had two candidates, a 80-track shugart model ??? from the frankenbeeb, and a 40 track Tandon model ??? from a IBM PC XT. With both 40 and 80 tracks, it should cover the majority of floppys I want to read.
