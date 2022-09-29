@@ -247,14 +247,13 @@ It works! PSU turns on, fan spins and lights up, and voltage rails are live.
 
 We still need to connect it to the motherboard though, which will come later.
 
-
 ## Did anyone say RGB?
 
-I do want to involve some RGB in this build, although here it's slightly more difficult than usual. On a typical RGB build, the light comes from:
+I do want to involve some RGB in this build, although it's slightly different here.
 
-* PSU / Case fans 
+On a typical RGB build, the light comes from:
 
-* CPU cooler or water cooling radiator fans
+* Fans everywhere!
 
 * RGB RAM sticks
 
@@ -262,25 +261,29 @@ I do want to involve some RGB in this build, although here it's slightly more di
 
 However in this case:
 
-* we do have a RGB PSU, but its fan faces downwards, so not very visible.
+* Fans are not really needed for the Beeb, and it's a bit silly to add them just for looks.
 
 * RGB RAM sticks not applicable
 
-* Fans are not really required for the Beeb
-
 * I can try light strips, but they tend to be a bit tacky, and hard to conceal in open-frame cases
 
-So all in all, the RGB situation wasn't looking too hot. however, I stumbled upon something much better instead.
+So all in all, the RGB situation wasn't looking too hot. However, I did find something much better!
 
-while repairing a beeb motherboard, i shined a light from the back to check for solder bridges, the light passed through, beatifully liiminating the delicate and intricate design of all the traces on the circuit board. This is another happy coincidence that they did not use coppor ground planes or internal layers, both of which would block the light.
+While doing PCB repairs I often shine a light from the back to check for solder bridges. The light passes through and illuminate the delicate and intricate design of all the traces on the circuit board.
 
-the idea of adding a RGB backlight behind the entire motherboard immediately came to mind, it would reuiqre a lot of LEDs and possibly a huge circuitboard, but if the result looks good, it's worth the trouble in my book.
+![Alt text](photos/shadow.jpeg)
 
-Just for mockup, I cut some leftover RGB lightstrips to length and stuck them on the acrylic plate. the adhesives on those cheap strips are incrediably weak, still, they held just long enough so I can see how it looks like, and seeing it for the first time, it was incrediably striking, and I was in awe.
+This time, I want to expand the idea by **adding RGB backlight behind the entire motherboard**, it would require a lot of LEDs, but if it looks good, it's worth the trouble in my book.
 
-more descriptions? soft defussion, intricate design of the traces, etc.
+As a mockup, I cut some leftover RGB light strips to length and stuck them on the acrylic plate, and hastily wired them together.
 
+![Alt text](photos/mockrgb.jpeg)
 
+The adhesives on those cheap strips are incredibly weak, still, they held just long enough so I can see how it looks like, and what a sight to behold!
+
+![Alt text](photos/rgbtest.jpeg)
+
+Seeing it for the first time, I was in awe. And this is just a solid white, it would be even more striking once I add animations and different colours.
 
 I went ahead to design a whole new ATX adaptor plate, this time as a whole circuit board with RGB LEDs evenly distributed. I also left a cutout under the keyboard connector, so the cables can exit underneath and not block the backlight. I also used a USB-C connector to carry the ARGB signal, as it is much neater to use the regular USBC cable.
 

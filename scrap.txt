@@ -1,3 +1,5 @@
+This is another happy coincidence that they did not use coppor ground planes or internal layers, both of which would block the light.
+
 * Everything's in one place, no more separate boxes.
 
 * Juxtaposition of old and new. 40 year old hardware in cutting edge 
