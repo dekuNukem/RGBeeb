@@ -159,7 +159,7 @@ It didn't seem like a tall order, but after sifting through dozens of pages on a
 
 ![Alt text](photos/cases.png)
 
-As you can see, apparently 5.25" bays just isn't thing anymore! Instead there is a blank space where it used to be, to the horror of *dozens* of retro modding enthusiasts.
+As you can see, apparently 5.25" bays just isn't a thing anymore! Instead there is a blank space where it used to be, to the horror of *dozens* of retro modding enthusiasts.
 
 (yes I know there's a case with 2 bays right in that photo, but I need 4 for two drives)
 
@@ -189,13 +189,13 @@ I looked up ATX standard, and measured the mounting holes on the BBC motherboard
 
 ![Alt text](photos/acrylic.png)
 
-The case soon arrived, I had the main chassis laid out, installed ATX standoffs, and tried out the adapter plate:
+The case soon arrived, I had the main chassis laid out and tried out the adapter plate:
 
 ![Alt text](photos/testmount.jpeg)
 
 It works! And already looks pretty good! I really like how modular this case is. 
 
-I then installed the ATX power supply. To my annoyance the RGB fan points downwards, so it is practically invisible with the case standing up. But at least it's white!
+I then installed the ATX power supply. Annoyingly the RGB fan points downwards, so it is practically invisible with the case standing up. But at least it's white!
 
 ![Alt text](photos/atxpsu.jpeg)
 
@@ -211,7 +211,7 @@ The most basic circuit would be something like this:
 
 One slight issue is that I want to use the power button on the PC case, which is momentary. That means I can't just hook it up to the PS_ON pin, as it will only turn on while the button is held down.
 
-I thought about using a simple flip-flop to toggle the PWR_ON signal with button presses, and it rather quickly got out of hand. How about putting it on a PCB? What about button denouncing? I can put the 7905 on there too! Might as well break out all the voltages! A fan header would be useful! What about RGB?
+I thought about using a simple flip-flop to toggle the PWR_ON signal with button presses, and it quickly got out of hand. How about putting it on a PCB? What about button debouncing? I can put the 7905 on there too! Might as well break out ALL the voltages! A fan header would be useful! What about RGB?
 
 ## Enter ATX4VC
 
@@ -225,21 +225,21 @@ It combines lots of convenient features in one place:
 
 * Soft power button and power LED headers
 
-* Two Addressable RGB(ARGB) headers
-
 * Temperature probe support
 
 * Two 4-pin PWM fan headers, manual speed adjust or temperature dependent
+
+* Two Addressable RGB(ARGB) headers
 
 * Open-source!
 
 Click me to buy one / more details / user manual.
 
-Altogether, it's an all-in-one convenient package for replacing old unreliable (and sometime explosive!) power supplies with modern ATX PSUs, with provision for cooling and aesthetic upgrades.
+Altogether, it's an all-in-one package for replacing old unreliable (and sometime explosive!) power supplies with modern ATX PSUs, with provision for cooling and aesthetic upgrades.
 
 --------
 
-It also fits neatly in a 2.5 inch drive bay, I hooked up an RGB fan and power button and LED headers, and pressed the button.
+It also fits neatly in a 2.5 inch drive bay, I hooked up the power button and LED headers, as well as a fan, and pressed the button.
 
 ![Alt text](photos/fantest.jpeg)
 
@@ -249,21 +249,11 @@ We still need to connect it to the motherboard though, which will come later.
 
 ## Did anyone say RGB?
 
-I do want to involve some RGB in this build, although it's slightly different here.
+I do want to involve some RGB in this build, usually they come from RGB fans, RAM sticks, or light strips, none of which are really suitable here:
 
-On a typical RGB build, the light comes from:
+* Beeb doesn't need fan cooling, and it's a bit silly to add them just for looks.
 
-* Fans everywhere!
-
-* RGB RAM sticks
-
-* Light strips
-
-However in this case:
-
-* Fans are not really needed for the Beeb, and it's a bit silly to add them just for looks.
-
-* RGB RAM sticks not applicable
+* Same with RGB RAM sticks
 
 * I can try light strips, but they tend to be a bit tacky, and hard to conceal in open-frame cases
 
@@ -271,48 +261,76 @@ So all in all, the RGB situation wasn't looking too hot. However, I did find som
 
 While doing PCB repairs I often shine a light from the back to check for solder bridges. The light passes through and illuminate the delicate and intricate design of all the traces on the circuit board.
 
-![Alt text](photos/shadow.jpeg)
-
 This time, I want to expand the idea by **adding RGB backlight behind the entire motherboard**, it would require a lot of LEDs, but if it looks good, it's worth the trouble in my book.
 
-As a mockup, I cut some leftover RGB light strips to length and stuck them on the acrylic plate, and hastily wired them together.
+For mockup, I stuck some RGB light strips on the acrylic plate, and hastily wired them together.
 
 ![Alt text](photos/mockrgb.jpeg)
 
-The adhesives on those cheap strips are incredibly weak, still, they held just long enough so I can see how it looks like, and what a sight to behold!
+Seeing it for the first time, I was in awe.
 
 ![Alt text](photos/rgbtest.jpeg)
 
-Seeing it for the first time, I was in awe. And this is just a solid white, it would be even more striking once I add animations and different colours.
+What a sight to behold! And this is just a solid white, should be even more striking with animations and more colours.
 
-I went ahead to design a whole new ATX adaptor plate, this time as a whole circuit board with RGB LEDs evenly distributed. I also left a cutout under the keyboard connector, so the cables can exit underneath and not block the backlight. I also used a USB-C connector to carry the ARGB signal, as it is much neater to use the regular USBC cable.
+I could have just used that, but it was rather messy, so I designed a whole new custom PCB with evenly distributed RGB LEDs, that also function as the ATX adapter plate. I also left a hole in the middle so cables can exit underneath and not block the light. 
 
-this is the biggest PCB I have ever designed, it is not very complicated, but did took me a while to solder all 168 LEDs by hand. Fortunately, everything lined up fine and it worked on the first revision, it gets blindingly bright when turned all the way up, and the motherboard looks amazing in front ot it, especially after adding different RGB animations. The light difusses nicely around the edge of the board, and the white case really makes the colour pop while remaining a classy and uncluttered wook, i'm exteremly happy with how it turned out. this kind of effects is simply not possible with modern moterhboards.
+I used **USB-C** to carry the ARGB signal. Often used for charging, the connector and cables are already designed to carry decent amount of current. A single cable plugs directly into ATX4VC, much cleaner this way.
 
+![Alt text](photos/rgbplate.png)
 
-## USB Keyboards on BBC Micro?
+This is the biggest PCB I have ever designed, it is not very complicated, but did take me a while to solder all 168 LEDs by hand. Fortunately, everything worked on first try, and it gets blindingly bright when turned all the way up!
 
-With such a modern case, it's only natural that I want to use this BBC micro just like a real PC with USB keyboard and gamepad.
+![Alt text](photos/rgbtable.jpeg)
 
-As if by total coincidence, I happen to have a project for exactly that! what are the odds!
+How does it look like with the motherboard? Well:
 
-The USB4VC project allows modern USB keyboards, mouse, and gamepads to be used on vintage computers. The modular design supports a wide range of computers with protocol cards. 
+![Alt text](photos/rgbcasetest.jpeg)
 
-At the time of writing, P-cards are availble for IBM PC compatible(ps/2 keyboard/mouse, XT keyboard, serial mouse, 15pin gamepads) and apple macintosh lines. does it need to be this detailed?
+![Alt text](photos/rgbcloseup.jpeg)
 
-Your can read more about the project here.
+Now **that's** what you call R, G, and B!
 
-Anyway, I designed a new protocol card for the BBC Micro, supporting its keyboard and joystick.
+## USB on BBC
 
-the keyboard for BBC micro is a very clever piece of design, it can scan its matrix atonomously without CPU involvment, an interrupt is generated when keypress is detected, only then CPU starts to scan the matrix to see which key is pressed.
+With power and RGB sorted, what's the next must-have item on a modern PC?
 
-That means the timing is very tight once the 6502 starts keyboard query, I actually overclocked the microcontroller to be on the safe side, but in the end it does work rather nicely.
+Why yes, **USB keyboard, mouse, and gamepads** of course! With such a modern case, it's only natural that I use it with modern inputs!
 
-I also had to remap a few buttons since the keyboard layout is different on PC keyboards compared to BBC micro.
+As if by total coincidence, I happen to have a project for exactly that! What are the odds?
 
-I used to on0board DAC for the joystick analog axies, which works fine, although careful calibration is needed to ensure the positiion is centred, as most games dont have calibration themselves.
+![Alt text](photos/usb.jpeg)
 
-The prototype p-card works fine with some bodge wires, and those will be fixed in the final version.
+[USB4VC](https://github.com/dekuNukem/USB4VC/blob/master/README.md) let you **use USB keyboard, mouse, and gamepads on retro computers**, as an alternative to rare, expensive, and unreliable proprietary vintage peripherals.
+
+With a modular design, different computers are supported by swapping out **Protocol Cards** (P-Cards).
+
+Naturally, I made one for the Beeb:
+
+![Alt text](photos/pcard.jpeg)
+
+It supports BBC Micro keyboard, joystick, and AMX user port mouse.
+
+The prototype has a few bodge wires, but they are fixed in the latest revision. And it works!
+
+![Alt text](photos/pcardtest.gif)
+
+Pretty fun using a wireless mechanical keyboard and Xbox One controller on the Beeb!
+
+And if for some reason you literally can't even be bothered to *type*, you can always let [duckyPad](https://github.com/dekuNukem/duckyPad/blob/master/README.md) do it!
+
+![Alt text](photos/ducktype.gif)
+
+duckyPad is an RGB hot-swap mechanical macropad that helps speed up workflow by automating actions using duckyScript.
+
+![Alt text](photos/duck.jpeg)
+
+Read more about [USB4VC](https://github.com/dekuNukem/USB4VC/blob/master/README.md) and [duckyPad](https://github.com/dekuNukem/duckyPad/blob/master/README.md) if you're interested!
+
+------
+
+Phew! Two plugs in one section! 
+
 
 ## Mounting floppy drives
 
@@ -381,4 +399,34 @@ As for what's next, i might add a torch Z80 card to add CP/M capability next, bu
 
 
 ## putting it all together
+
+
+## Questions and answers
+
+can I buy one?
+
+
+I'm not totally closed to commisions, but 
+
+easier to build one yourself, all you really need is the adaptor plate, everything else is up to you, can stay completely stock or go nuts like I did.
+
+is bbc micro pcard for sale?
+
+not at the moment, dont see much demand, but let me know
+
+
+
+## Product links
+
+duckypad
+USB4VC
+ATX4VC
+
+## Other fun stuff
+
+## Get in touch
+
+my usual contact info
+
+
 

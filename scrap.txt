@@ -1,3 +1,21 @@
+![Alt text](photos/shadow.jpeg)
+*"But wait!"* I hear everybody cry out, *"doesn't BBC Micro already come with a keyboard?"*
+
+Yes, but if I'm dragging a Beeb kicking and screaming into the RGB age, I might as well do it properly.
+
+ The hardware is there but I haven't gotten around to write firmware for it, since so few programs use the mouse.
+
+the keyboard for BBC micro is a very clever piece of design, it can scan its matrix autonomously without CPU involvement. An interrupt is generated when key press is detected, only then CPU starts to scan the matrix to see which key is pressed.
+
+That means the timing is very tight once the 6502 starts keyboard query, I actually overclocked the microcontroller to be on the safe side, but in the end it does work rather nicely.
+
+I also had to remap a few buttons since the keyboard layout is different on PC keyboards compared to BBC micro.
+
+I used to on0board DAC for the joystick analog axies, which works fine, although careful calibration is needed to ensure the positiion is centred, as most games dont have calibration themselves.
+
+The prototype p-card works fine with some bodge wires, and those will be fixed in the final version.
+
+
 This is another happy coincidence that they did not use coppor ground planes or internal layers, both of which would block the light.
 
 * Everything's in one place, no more separate boxes.
