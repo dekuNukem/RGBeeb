@@ -259,9 +259,11 @@ I do want to involve some RGB in this build, usually they come from RGB fans, RA
 
 So all in all, the RGB situation wasn't looking too hot. However, I did find something much better!
 
-While doing PCB repairs I often shine a light from the back to check for solder bridges. The light passes through and illuminate the delicate and intricate design of all the traces on the circuit board.
+----
 
-This time, I want to expand the idea by **adding RGB backlight behind the entire motherboard**, it would require a lot of LEDs, but if it looks good, it's worth the trouble in my book.
+Ground planes and large copper pours really didn't become popular until late 80s, which means the earlier circuit boards are basically translucent. If you shine a light from behind, it will illuminate the delicate and intricate design of all the traces on the PCB.
+
+And here, I want to expand the idea by **adding RGB backlight behind the entire motherboard**, it would require a lot of LEDs, but if it looks good, it's worth the trouble in my book.
 
 For mockup, I stuck some RGB light strips on the acrylic plate, and hastily wired them together.
 
@@ -275,7 +277,7 @@ What a sight to behold! And this is just a solid white, should be even more stri
 
 I could have just used that, but it was rather messy, so I designed a whole new custom PCB with evenly distributed RGB LEDs, that also function as the ATX adapter plate. I also left a hole in the middle so cables can exit underneath and not block the light. 
 
-I used **USB-C** to carry the ARGB signal. Often used for charging, the connector and cables are already designed to carry decent amount of current. A single cable plugs directly into ATX4VC, much cleaner this way.
+I used **USB-C** to carry the ARGB signal. Often used for charging, it is already designed to carry decent amount of current. A single cable plugs directly into ATX4VC, much cleaner this way.
 
 ![Alt text](photos/rgbplate.png)
 
@@ -297,7 +299,7 @@ With power and RGB sorted, what's the next must-have item on a modern PC?
 
 Why yes, **USB keyboard, mouse, and gamepads** of course! With such a modern case, it's only natural that I use it with modern inputs!
 
-As if by total coincidence, I happen to have a project for exactly that! What are the odds?
+As if by total coincidence, I happen to have a project for *exactly that*! What are the odds?
 
 ![Alt text](photos/usb.jpeg)
 
@@ -321,7 +323,7 @@ And if for some reason you literally can't even be bothered to *type*, you can a
 
 ![Alt text](photos/ducktype.gif)
 
-duckyPad is an RGB hot-swap mechanical macropad that helps speed up workflow by automating actions using duckyScript.
+duckyPad is a hot-swap mechanical macropad that helps speed up workflow by automating actions using duckyScript.
 
 ![Alt text](photos/duck.jpeg)
 
@@ -329,31 +331,63 @@ Read more about [USB4VC](https://github.com/dekuNukem/USB4VC/blob/master/README.
 
 ------
 
-Phew! Two plugs in one section! 
+Phew! Two plugs in one section, that was close!
 
 
-## Mounting floppy drives
+## Here comes the twist
 
-another0 goal of this project is to have real working full-height 5.25" floppy drives in the case. I had two candidates, a 80-track shugart model ??? from the frankenbeeb, and a 40 track Tandon model ??? from a IBM PC XT. With both 40 and 80 tracks, it should cover the majority of floppys I want to read.
+With a flurry of modern upgrades, time to go balance it out with some good ol' 5.25" drives!
 
-I added a ???? floppy controller0 chip and tested out the setup. After some trail and error it seems that for the dual floppy to work, the ribbon cable needs to have NO TWIST, and the drive ID set manually with the on-board jumper. a terminating resistor might also be needed at the last drive on the cable. 
+I wanted to have them from the start, partly for contrast with all the new stuff, and partly because I actually have a huge pile of floppies that I want to explore.
 
-The acorn DFS treats each side of a floppy as different drives, so physical Drive ID 0 will be DFS drive 0 and 2, while drive ID 1 will be drive 1 and 3.
+I picked two drives, a 48TPI Tandon TM-100-2A from an OG IBM PC, and a 96TPI Shugart SA460 from the FrankenBeeb.
 
-I tested out the setup seperately, and it seemed to work, so now I need to figure out how to mount them on the case.
+With both 40 and 80 tracks, it should cover most of the floppies from the era.
 
-fortunately the case has plenty of slots near the font for mounting water cooling heatsinks and fans, and looks like a simple metal bracket is all that;s needed.
+![Alt text](photos/both.jpeg)
 
-I went to the local hardware store and bought some angle brackets that looked close enough, I then measured and drilled the holes for the drive. A one-piece solid metal bracket would be preferable, but i wasnt able to find off-the-shelf parts, custom fabrication would have been a lot more expensive.
+After some trail and error, I found that the cable needs to have **no twists**, and drive ID set manually with jumper
 
-anyway, the drives mounts fine, however when I line up the faceplate of the drive with the front of the case, the connectors on the back of the motherboard prevents the ribbon cable from being inserted. Still, it;s not a showstopper, I can fix that along with a few other planned modifcations. 
+I had to manually de-twist my cable by cutting and re-soldering the wires in order, which was a bit annoying, but with that and manually setting the drive ID 0 and 1, both worked!
 
-Speaking of which...
+![Alt text](photos/floppytest.jpeg)
 
+With Intel 8271 disk controller and Acorn DFS, two sides of a floppy appear as two separate drives. So the Shugart is drive 0 and 2, and Tandon is drive 1 and 3. This disk seem to have Elite and some save data on it, very nice!
+
+With the setup working, I now have to figure out how to mount them on the case.
+
+The right side of the case has slots for mounting water cooling radiators, I went to local hardware store and bought some metal brackets that's roughly the size, and cut them to length and drilled holes in them.
+
+![Alt text](photos/bnq.png)
+
+They are screwed into the slot and hold the drives from the bottom. I really wanted something more substantial, like a one-piece metal bracket, but custom fabrication would have been a lot more expensive.
+
+![Alt text](photos/empty.jpeg)
+
+Anyway, I test-mounted the drives, and they look pretty good! The face plates line up with the front of the case.
+
+![Alt text](photos/fit.jpeg)
+
+It all seemed to be going suspiciously well, but of course, things soon went back to normal when I tried to install the motherboard:
+
+![Alt text](photos/block.jpeg)
+
+The connectors in the back are too long! They are touching the floppy cable, preventing the motherboard from being installed.
+
+Well, it's about time that we do something to it...
 
 ## Motherboard modifications
 
-A few modifications were carrid out on the motherboard, mostly for anesstenic reasons. they are completely optional and  entirely reversible, so keep that in mind if you want to try something similar yourslef.
+This is the part where the motherboard is going under the knife (well soldering iron). As I mentioned before, all the modifications are **optional and reversible** for aesthetic reasons. Keep that in mind if you want to try something similar yourself.
+
+### Relocating pin headers
+
+The 1MHz and Tube connectors were blocking the floppy drive, so I simply desoldered them. I also 
+
+ and replaced them with straight headers. they will still work but takes less space. You The desoldering can be a bit harsh on the PCB, so dont do this unless you run into unavoidable space constrains.
+
+I also desoldered the keyboard pin header and installed it upside down, so the long end is pointing downwards. this way I can connect the keyboard cable from behind through the cutout on the ATX RGB adaptor plate, elinating another item to block the backlight. anything for that clean look!
+
 
 ### Power connector
 
@@ -366,12 +400,6 @@ run wires directly to it from the ATX PSU, but it would creat some clutter0 and 
 make sure the cable you use is thick enough to carry at least 2A of current, and double check you didn't accidently cross the 5V and GND and short them. also make sure the exposed conductor is not shorting on nearby traces and components.
 
 with the posts removed and new cabling in the back, I can now simply plug it into the terminal blocks on ATX4VC and power the motherboard that way.
-
-### reLOCATING pin headers
-
-As the connectors on the back of the motherboard were blocking the floppy drive, I simply desoldered and replaced them with straight headers. they will still work but takes less space. You The desoldering can be a bit harsh on the PCB, so dont do this unless you run into unavoidable space constrains.
-
-I also desoldered the keyboard pin header and installed it upside down, so the long end is pointing downwards. this way I can connect the keyboard cable from behind through the cutout on the ATX RGB adaptor plate, elinating another item to block the backlight. anything for that clean look!
 
 ## Putting it all together
 

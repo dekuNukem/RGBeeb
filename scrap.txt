@@ -7,6 +7,26 @@ Yes, but if I'm dragging a Beeb kicking and screaming into the RGB age, I might 
 
 the keyboard for BBC micro is a very clever piece of design, it can scan its matrix autonomously without CPU involvement. An interrupt is generated when key press is detected, only then CPU starts to scan the matrix to see which key is pressed.
 
+While doing PCB repairs I often shine a light from the back to check for solder bridges. The light passes through and illuminate the delicate and intricate design of all the traces on the circuit board.
+
+
+
+I tested out the setup separately, and it seemed to work, so now I need to figure out how to mount them on the case.
+
+fortunately the case has plenty of slots near the font for mounting water cooling heatsinks and fans, and looks like a simple metal bracket is all that;s needed.
+
+I went to the local hardware store and bought some angle brackets that looked close enough, I then measured and drilled the holes for the drive. A one-piece solid metal bracket would be preferable, but i wasnt able to find off-the-shelf parts, custom fabrication would have been a lot more expensive.
+
+anyway, the drives mounts fine, however when I line up the faceplate of the drive with the front of the case, the connectors on the back of the motherboard prevents the ribbon cable from being inserted. Still, it;s not a showstopper, I can fix that along with a few other planned modifcations. 
+
+Speaking of which...
+
+another0 goal of this project is to have real working full-height 5.25" floppy drives in the case. I had two candidates, a 80-track shugart model ??? from the frankenbeeb, and a 40 track Tandon model ??? from a IBM PC XT. With both 40 and 80 tracks, it should cover the majority of floppys I want to read.
+
+I added a ???? floppy controller0 chip and tested out the setup. After some trail and error it seems that for the dual floppy to work, the ribbon cable needs to have NO TWIST, and the drive ID set manually with the on-board jumper. a terminating resistor might also be needed at the last drive on the cable. 
+
+The acorn DFS treats each side of a floppy as different drives, so physical Drive ID 0 will be DFS drive 0 and 2, while drive ID 1 will be drive 1 and 3.
+
 That means the timing is very tight once the 6502 starts keyboard query, I actually overclocked the microcontroller to be on the safe side, but in the end it does work rather nicely.
 
 I also had to remap a few buttons since the keyboard layout is different on PC keyboards compared to BBC micro.
