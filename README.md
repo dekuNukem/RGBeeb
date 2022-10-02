@@ -368,7 +368,7 @@ Anyway, I test-mounted the drives, and they look pretty good! The face plates li
 
 ![Alt text](photos/fit.jpeg)
 
-It all seemed to be going suspiciously well, but of course, things soon went back to normal when I tried to install the motherboard:
+Everything seemed to be going suspiciously well, but of course, things soon went back to normal when I tried to install the motherboard:
 
 ![Alt text](photos/block.jpeg)
 
@@ -378,13 +378,13 @@ Well, it's about time that we do something to it...
 
 ## Motherboard modifications
 
-This is the part where the motherboard is going under the knife (well soldering iron). As I mentioned before, all the modifications are **optional and reversible** for aesthetic reasons. Keep that in mind if you want to try something similar yourself.
+This is the part where I put the motherboard under the knife (well soldering iron). As I mentioned before, all modifications are purely for aesthetic reasons, and are totally **optional and reversible**.
 
 ### Relocating pin headers
 
 The 1MHz and Tube connectors were blocking the floppy drive, so I simply desoldered them. I also 
 
- and replaced them with straight headers. they will still work but takes less space. You The desoldering can be a bit harsh on the PCB, so dont do this unless you run into unavoidable space constrains.
+and replaced them with straight headers. they will still work but takes less space. You The desoldering can be a bit harsh on the PCB, so dont do this unless you run into unavoidable space constrains.
 
 I also desoldered the keyboard pin header and installed it upside down, so the long end is pointing downwards. this way I can connect the keyboard cable from behind through the cutout on the ATX RGB adaptor plate, elinating another item to block the backlight. anything for that clean look!
 
