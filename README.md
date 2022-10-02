@@ -305,7 +305,7 @@ As if by total coincidence, I happen to have a project for *exactly that*! What 
 
 [USB4VC](https://github.com/dekuNukem/USB4VC/blob/master/README.md) let you **use USB keyboard, mouse, and gamepads on retro computers**, as an alternative to rare, expensive, and unreliable proprietary vintage peripherals.
 
-With a modular design, different computers are supported by swapping out **Protocol Cards** (P-Cards).
+With a modular design, different computers are supported by swapping out **Protocol Cards**.
 
 Naturally, I made one for the Beeb:
 
@@ -331,7 +331,7 @@ Read more about [USB4VC](https://github.com/dekuNukem/USB4VC/blob/master/README.
 
 ------
 
-Phew! Two plugs in one section, that was close!
+Phew! Two plugs in one section!
 
 
 ## Here comes the twist
@@ -380,30 +380,34 @@ Well, it's about time that we do something to it...
 
 This is the part where I put the motherboard under the knife (well soldering iron). As I mentioned before, all modifications are purely for aesthetic reasons, and are totally **optional and reversible**.
 
-### Relocating pin headers
+First, I desoldered the Tube, 1MHz, and user port header:
 
-The 1MHz and Tube connectors were blocking the floppy drive, so I simply desoldered them. I also 
+![Alt text](photos/headeroff.png)
 
-and replaced them with straight headers. they will still work but takes less space. You The desoldering can be a bit harsh on the PCB, so dont do this unless you run into unavoidable space constrains.
+That was NOT easy, experience and extra care is needed to not lift any pads or damage the PCB.
 
-I also desoldered the keyboard pin header and installed it upside down, so the long end is pointing downwards. this way I can connect the keyboard cable from behind through the cutout on the ATX RGB adaptor plate, elinating another item to block the backlight. anything for that clean look!
+Next, out comes the keyboard connector and all 7 power connector blades:
 
+![Alt text](photos/desolder.png)
 
-### Power connector
+I then soldered a straight header on the user port, so I can use the excellent MMFS SD card adapter.
 
-BBC motherboard have power supply posts where the cable plugs into. in total there are three 5V and 3 GND posts, and a single -5V post. All your have to do is feed them the correct voltage.
+(I think I put it in backwards in this photo, make sure to double check!)
 
-the simpllist and non-destructive way is just
+![Alt text](photos/userport.png)
 
-run wires directly to it from the ATX PSU, but it would creat some clutter0 and block the backlight, so I decided to go a bit further and desolder all the posts and run the cables on the back of the PCB. I used plenty of flux, added some new solder, and heated up the post and pulled it out. I then sucked the solder out of the hole, cleaned it up, and ran power cables to connect all the rails together.
+I then ran power cables to connect all the rails together, 5V, GND, and -5V.
 
-make sure the cable you use is thick enough to carry at least 2A of current, and double check you didn't accidently cross the 5V and GND and short them. also make sure the exposed conductor is not shorting on nearby traces and components.
+I also soldered the keyboard header on the back side.
 
-with the posts removed and new cabling in the back, I can now simply plug it into the terminal blocks on ATX4VC and power the motherboard that way.
+![Alt text](photos/power.jpeg)
+
+This way, the power can be plugged into ATX4VC, and keyboard ribbon cable can exit through the hole on the ATX plate so it won't block the backlight.
+
 
 ## Putting it all together
 
-Time to finally put everything together! I gave the motehrbaord another wash to clean off the sticky flux residues, fed the floppy and power cable through the adaptor plate cutout to make sure they dont block backlight. I then mounteed the ATX4VC on the spare 2.5 inch drive bay. It fits nicely, and powers the RGB backlight and USB4VC through two USB-C cables.
+Time to finally put everything together! I gave the motherboard a wash to clean off the sticky flux residues, fed the floppy and power cable through the adaptor plate cutout to make sure they dont block backlight. I then mounteed the ATX4VC on the spare 2.5 inch drive bay. It fits nicely, and powers the RGB backlight and USB4VC through two USB-C cables.
 
 the two floppy disk drives now fits perfectly with the header removed, although the power cable is just barely long enough.
 
@@ -442,6 +446,10 @@ is bbc micro pcard for sale?
 
 not at the moment, dont see much demand, but let me know
 
+
+## Make your own notes
+
+make sure the cable you use is thick enough to carry at least 2A of current, and double check you didn't accidently cross the 5V and GND and short them. also make sure the exposed conductor is not shorting on nearby traces and components.
 
 
 ## Product links
