@@ -2,6 +2,8 @@
 
 BBC Micro inside a open-frame ATX PC case 
 
+![Alt text](photos/moneyshot.jpeg)
+
 !!MEDIA TODO: Photo of completed build, big wood tabletop, HDMI monitor, modern wireless mechanical keyboard, mouse, and Xbox Series X gamepad.
 
 !!MEDIA TODO: GIF clip of the machine in action. overview, power up, closeup of animated backlit motherboard, using modern input devices.
@@ -100,7 +102,7 @@ I removed the RIFA caps from the PSU, took lots of photos for documentation, cle
 
 ![Alt text](photos/roms.jpeg)
 
-The disc drive works too! I decided not to risk its original power supply, and powered the drives with a modern ATX PSU. The FrankenBeeb read the discs just fine:
+The disc drive works too! I decided not to risk the original power supply, and used a modern ATX PSU to power the drive. The FrankenBeeb read the discs just fine:
 
 ![Alt text](photos/mess2.jpg)
 
@@ -120,7 +122,7 @@ This way,
 
 ## A Happy Coincidence?
 
-Obviously, the most important part is mounting the motherboard. So I found a spare and did some measurements.
+Obviously, the most important part is mounting the motherboard. So I did some measurements.
 
 Imagine my surprise when it turns out the BBC micro motherboard is **almost identical in size** as full-size ATX!
 
@@ -173,7 +175,7 @@ Some of them are just scaffolding for mining rigs, but one in particular really 
 
 * I really like its striking yet minimalist design, juxtapose neatly with the 1980s technology. It's also a nice break from today's rather bland "gaming black" aesthetics.
 
-* It puts the motherboard on display front-and-center, instead of having to look through a window into a box in conventional cases. Much less claustrophobic.
+* It puts the motherboard on display front-and-center, instead of having to look through a window into a box in conventional cases. Less claustrophobic.
 
 * There are lots of space to work with, and everything is modular. PCI bracket blocking the ports? Simply don't install it!
 
@@ -223,7 +225,7 @@ It combines lots of convenient features in one place:
 
 * All common voltages: +12V, +5V, +3.3V, -5V, -12V.
 
-* Soft power button and power LED headers
+* Headers for soft power button and power LED
 
 * Temperature probe support
 
@@ -404,18 +406,54 @@ I also soldered the keyboard header on the back side.
 
 This way, the power can be plugged into ATX4VC, and keyboard ribbon cable can exit through the hole on the ATX plate so it won't block the backlight.
 
-
 ## Putting it all together
 
-Time to finally put everything together! I gave the motherboard a wash to clean off the sticky flux residues, fed the floppy and power cable through the adaptor plate cutout to make sure they dont block backlight. I then mounteed the ATX4VC on the spare 2.5 inch drive bay. It fits nicely, and powers the RGB backlight and USB4VC through two USB-C cables.
+Time to finally put everything together! 
 
-the two floppy disk drives now fits perfectly with the header removed, although the power cable is just barely long enough.
+I fed the floppy and power cable through the hole in the adapter plate, and screwed it in.
 
-I also uesd RGB2HDMI to upscale the video output to HDMI.
+![Alt text](photos/back.jpeg)
 
-the turboMMC makes playing games even easier on BBC micro by booting from SD card with a interaction menu. and 
+In the back, I:
 
-## conclusion
+* Cable tied the USB4VC in place, and connected the ribbon cable.
+
+* Installed two 9-Pin USB header to USB-A adapters, so USB devices can be plugged in on the front panel.
+
+* Cable tied the speaker near the front of the case.
+
+* Powered USB4VC with a USB-C cable.
+
+![Alt text](photos/caseback.jpeg)
+
+I then connected up ATX4VC:
+
+![Alt text](photos/atx4vc_config.jpeg)
+
+* Power rails on top.
+
+* Two USB-C power output on left, one for USB4VC, one for RGB backlight plate.
+
+* Case power button and power LED on right. Case reset button used to change RGB mode.
+
+* ATX motherboard connector on the bottom.
+
+It controls power, lighting and cooling of the whole system. I really like how clean and integrated this is, much better than a nest of flying wires and components.
+
+I then installed the floppy drives, and gave it a test:
+
+![Alt text](photos/testdone.jpeg)
+
+It still works! This motherboard is an issue 4, I picked it because most chips are socketed (including all RAMs), making it very easy to test and troubleshoot. The solder mask also seems thinner as well, allowing more light to pass through.
+
+I decked it out with optional upgrades for the big day, with disk controller, speech synthesis, ADC, and econet. Annoyingly the econet chip itself is missing, and I'll need to get one.
+
+Anyway, time to install the tempered glass for the money shot:
+
+![Alt text](photos/moneyshot.jpeg)
+
+
+## Conclusion
 
 It;s amazing how quickly a simple idea can get out of hand, I started out just wanting to put a BBC micro mnotherboard into a ATX case, and in the end I developed a new protocol card for USB4VC, a general purpose ATX controller for vintage computers, and a custom RGB backlight plate adaptor. I took this idea and really pushed to see how far I can go.
 
@@ -429,6 +467,7 @@ still, i learned a lot about the history and clever design of this machine, and 
 
 As for what's next, i might add a torch Z80 card to add CP/M capability next, but to be honest, i spent so much time building this thing, I have't had much time actually enjoying the machine itself, so I guess that's what coming up next.
 
+much more work than i wrote, 6 revisions ATX4VC, lots of firmware devleopment, waiting for parts. 3 months
 
 ## putting it all together
 
