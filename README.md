@@ -1,28 +1,24 @@
 # Pimp My Beeb
 
-BBC Micro inside a open-frame ATX PC case 
+How I built the **RGBeeb**, a BBC Micro inside a PC case.
+
+With RGB Backlight, USB inputs, ATX PSU, and working full-height floppy drives.
 
 ![Alt text](photos/moneyshot.jpeg)
 
-!!MEDIA TODO: Photo of completed build, big wood tabletop, HDMI monitor, modern wireless mechanical keyboard, mouse, and Xbox Series X gamepad.
-
-!!MEDIA TODO: GIF clip of the machine in action. overview, power up, closeup of animated backlit motherboard, using modern input devices.
+![Alt text](photos/header.gif)
 
 ## Highlights
 
 * Fully functional BBC Micro inside open-frame ATX PC case
 
-* Animated RGB Backlight
+* Animated custom RGB Backlight
 
 * Working dual full-height 5.25" Floppy Drives
 
-* USB keyboard and gamepad ([via USB4VC](https://github.com/dekuNukem/USB4VC/blob/master/README.md))
+* USB keyboard and gamepad [via USB4VC](https://github.com/dekuNukem/USB4VC/blob/master/README.md)
 
-* HDMI video out ([via RGB2HDMI](https://github.com/hoglet67/RGBtoHDMI))
-
-* SD card support (TurboMMC)
-
-* Working soft power and reset button
+* ATX PSU controlled [by ATX4VC](https://github.com/dekuNukem/ATX4VC)
 
 ## BBC Micro: (A quick) Introduction
 
@@ -221,7 +217,7 @@ In the end, I decided to go all out and design a controller specifically for usi
 
 ![Alt text](photos/atx4vc.jpeg)
 
-It combines lots of convenient features in one place:
+It combines many convenient features in one place:
 
 * All common voltages: +12V, +5V, +3.3V, -5V, -12V.
 
@@ -449,6 +445,8 @@ It still works! This motherboard is an issue 4, I picked it because most chips a
 I decked it out with optional upgrades for the big day, with disk controller, speech synthesis, ADC, and econet. Annoyingly the econet chip itself is missing, and I'll need to get one.
 
 Anyway, time to install the tempered glass for the money shot:
+
+![Alt text](photos/light.jpeg)
 
 ![Alt text](photos/moneyshot.jpeg)
 
