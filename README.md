@@ -12,19 +12,21 @@ With RGB Backlight, USB inputs, ATX PSU, and working full-height floppy drives.
 
 * Fully functional BBC Micro inside open-frame ATX PC case
 
-* Animated custom RGB Backlight
+* Animated RGB Backlight
 
 * Working dual full-height 5.25" Floppy Drives
 
 * USB keyboard and gamepad [via USB4VC](https://github.com/dekuNukem/USB4VC/blob/master/README.md)
 
-* ATX PSU controlled [by ATX4VC](https://github.com/dekuNukem/ATX4VC)
+* ATX power control and RGB lighting [by ATX4VC](https://github.com/dekuNukem/ATX4VC)
+
+## Questions or comments?
+
+Feel free to ask in my [Discord Chatroom](https://discord.gg/T9uuFudg7j), raise a [Github issue](https://github.com/dekuNukem/RGBeeb/issues), or email `dekunukem` `gmail.com`!
 
 ## BBC Micro: (A quick) Introduction
 
 ![Alt text](photos/mybeeb.jpeg)
-
-### History and Legacy
 
 * In early 1980s, British Broadcasting Corporation(BBC) started the *Computer Literacy Project*, aiming to introduce people to computers and show what they can do.
 
@@ -44,9 +46,13 @@ With RGB Backlight, USB inputs, ATX PSU, and working full-height floppy drives.
 
 ### Specifications
 
-### Trivias
+The original Beeb featured a 6502 microprocessor running at 2MHz, 32K of ROM, and either 16 or 32K of RAM. Its [BASIC interpreter](https://en.wikipedia.org/wiki/BBC_BASIC) was notably one of the fastest of the era, beating even the original IMB PC!
 
-## Oh no! You butchered a piece of important computer history!
+It was also extremely expandable, with a plethora of ports including RS423, cassette, analogue, Econet, a digital user port, a 1MHz bus connection, and a "Tube" expansion slot.
+
+As a result, the Beeb was surprisingly long-lived, lasting more than 10 years. Numerous [upgrades and coprocessors](https://en.wikipedia.org/wiki/BBC_Micro_expansion_unit#ARM_Evaluation_System) were developed, including Z80, 32016, 80186, or even the very first ARM CPU!
+
+## Oh no! You butchered a piece of computer history!
 
 First of all, all modifications here are **non-destructive and reversible**. So no Beebs were harmed during the creation of this project!
 
@@ -68,9 +74,9 @@ Torch Computer went on to develop their [own machines](https://en.wikipedia.org/
 
 ## The FrankenBeeb
 
-Of course, Beeb tinkering did not stop with commercial companies, plenty enterprising users had a go as well!
+Of course, Beeb tinkering did not stop at commercial companies, plenty enterprising users had a go as well!
 
-Here is a machine I picked up locally via ebay:
+Here are eBay photos of a machine I picked up locally (with authentic 70s carpet):
 
 ![Alt text](photos/ebay.png)
 
@@ -80,17 +86,17 @@ The top half of the Beeb was replaced with a flat lid. And the keyboard is in it
 
 ![Alt text](photos/case.png)
 
-The new boxy case most likely allows the computer, disk drive and monitor to be stacked on top each other, saving valuable desk space.
+The new boxy case most likely allow the computer, disk drive and monitor to be stacked on top each other, saving valuable desk space.
 
 A look inside revealed big upgrades, fully kitted out with sidewise expansion card, floppy disc controller, battery backup, a standalone audio jack, and speech synthesis chips. And just look at all the ROMs!
 
 ![Alt text](photos/hinge.jpeg)
 
-The disc drive features dual-80 track full height floppy drives, with some notes on the door:
+The disc drive contains dual 80 track full height 5.25" floppy drives, with some notes on the door:
 
 ![Alt text](photos/disc.jpeg)
 
-There is no brand name or identifying information on any of the modifications, which led me to assume that the whole thing was home-made or at least from a kit.
+There is no brand name or identifying information anywhere on the modifications, which led me to assume that the whole thing was home-made or at least from a kit.
 
 Either way, it looks very professionally done, and is a seriously impressive feat of how far people would go to personalize their computers to their exact liking.
 
@@ -213,25 +219,23 @@ I thought about using a simple flip-flop to toggle the PWR_ON signal with button
 
 ## Enter ATX4VC
 
-In the end, I decided to go all out and design a controller specifically for using **ATX power supply on retro computers**, amply named **ATX4VC**:
+In the end, I decided to go all out and design a controller specifically for using **ATX power supply on retro computers**, amply named **[ATX4VC](https://github.com/dekuNukem/ATX4VC/blob/master/README.md)**:
 
 ![Alt text](photos/atx4vc.jpeg)
 
 It combines many convenient features in one place:
 
-* All common voltages: +12V, +5V, +3.3V, -5V, -12V.
+* All common voltages: +12V, +5V, +3.3V, -5V, -12V. Fused.
 
-* Headers for soft power button and power LED
+* Power button and power LED headers
 
-* Temperature probe support
+* Two 4-pin PWM fan headers
 
-* Two 4-pin PWM fan headers, manual speed adjust or temperature dependent
+* Two Addressable RGB (ARGB) headers
 
-* Two Addressable RGB(ARGB) headers
+* USB-C power output
 
-* Open-source!
-
-Click me to buy one / more details / user manual.
+[Click me for learn more / buy one / user manual](https://github.com/dekuNukem/ATX4VC/blob/master/README.md)
 
 Altogether, it's an all-in-one package for replacing old unreliable (and sometime explosive!) power supplies with modern ATX PSUs, with provision for cooling and aesthetic upgrades.
 
@@ -329,8 +333,7 @@ Read more about [USB4VC](https://github.com/dekuNukem/USB4VC/blob/master/README.
 
 ------
 
-Phew! Two plugs in one section!
-
+Phew! Two plugs in a row! Really pushing it here! 😅
 
 ## Here comes the twist
 
@@ -396,6 +399,8 @@ I then soldered a straight header on the user port, so I can use the excellent M
 
 I then ran power cables to connect all the rails together, 5V, GND, and -5V.
 
+If making your own, make sure the cable you use is thick enough to carry at least 2A of current, and double check for shorts between 5V and GND, and make sure the exposed conductor is not shorting on nearby traces and components.
+
 I also soldered the keyboard header on the back side.
 
 ![Alt text](photos/power.jpeg)
@@ -450,56 +455,68 @@ Anyway, time to install the tempered glass for the money shot:
 
 ![Alt text](photos/moneyshot.jpeg)
 
-
 ## Conclusion
 
-It;s amazing how quickly a simple idea can get out of hand, I started out just wanting to put a BBC micro mnotherboard into a ATX case, and in the end I developed a new protocol card for USB4VC, a general purpose ATX controller for vintage computers, and a custom RGB backlight plate adaptor. I took this idea and really pushed to see how far I can go.
+It's amazing how quickly a simple idea can get out of hand, I started out just wanting to put a BBC Micro motherboard into a ATX case, and in the end I developed a new protocol card for [USB4VC](https://github.com/dekuNukem/USB4VC/blob/master/README.md), an [ATX power controller](https://github.com/dekuNukem/ATX4VC/blob/master/README.md) just for retro computers, and a custom RGB backlight plate with 168 LEDs. Go big or go home, right? 😅
 
-none of this it toally necessary, it is still a plain old BBC micro with a slight upgrade and some disk drives. but just like the torch computer and the frankenbeeb, the whole ordeal of dragging it kicking and screaming to the 21st centry has made it much more special, and I guess this is what modification is all about.
+None of this it totally necessary, but just like the Torch Communicator and the FrankenBeeb, the whole ordeal of dragging it kicking and screaming into the RGB age made it feels more special, and I guess this is what modification is all about.
 
-originality is an important part of retro computing, and many classic machines had been butchered to put newer system in them. 
+Of course, I omitted a lot of less glamorous stuff such as writing and debugging firmwares, waiting for parts, many hardware revisions (ATX4VC had 6!), and fixing up old motherboards themselves. Took me about 3 months from start to finish.
 
-however, i do find many period modifications rather charming, such as the cursed mac, and I feel that if the process is non-destructive and reversible, i woulnd mind to have a bit of fun, especially with giving a bare motherboard a home instead of having it remain as spare parts.
+Still, I learned a lot about the history and clever design of this machine, and made something that hopefully benefits the community at large. With everything put together, it looks every bit as good as i imagined from the beginning.
 
-still, i learned a lot about the history and clever design of this machine, and devloped something that hopefully benefits the community at large. and with everything put together, it looks every bit as good as i imaghined from the beginning.
-
-As for what's next, i might add a torch Z80 card to add CP/M capability next, but to be honest, i spent so much time building this thing, I have't had much time actually enjoying the machine itself, so I guess that's what coming up next.
-
-much more work than i wrote, 6 revisions ATX4VC, lots of firmware devleopment, waiting for parts. 3 months
-
-## putting it all together
-
+As for what's next, I might add a Torch Z80 card for CP/M capability, but to be honest, I spent so much time building this thing, I haven't had much time actually using it! Guess I'm going to fix that.
 
 ## Questions and answers
 
-can I buy one?
+### I want to build one!
 
+Sure! As usual the project is open-source, and all you really need is the ATX adapter plate, which [can be found here](https://github.com/dekuNukem/RGBeeb/tree/master/plates).
 
-I'm not totally closed to commisions, but 
+Just give the files to a lase-cut acrylic manufacturer. The rest is up to you! Hopefully reading this article gave you some ideas.
 
-easier to build one yourself, all you really need is the adaptor plate, everything else is up to you, can stay completely stock or go nuts like I did.
+### Can I buy one?
 
-is bbc micro pcard for sale?
+(Mostly) No.
 
-not at the moment, dont see much demand, but let me know
+This is a very custom build with parts that can be unreliable and difficult to source, so I'm not inclined to turn it into a business.
 
+I'm not completely closed to the idea of making a few one-offs though, but it would need to be worth my while one way or the other.
 
-## Make your own notes
+[Get in touch](#get-in-touch) if you want to have a discussion or have any questions.
 
-make sure the cable you use is thick enough to carry at least 2A of current, and double check you didn't accidently cross the 5V and GND and short them. also make sure the exposed conductor is not shorting on nearby traces and components.
+### Is BBC Micro Protocol Card available?
 
+Might be, but not at the moment.
 
-## Product links
+BBC Micro already has built-in keyboard, so I don't see much demand for it. Also the firmware needs a little more polish to meet my public release standards.
 
-duckypad
-USB4VC
-ATX4VC
+So again, [let me know](#get-in-touch) if you want it, I'll update in the Discord channel.
 
-## Other fun stuff
+## Other Fun Stuff
+
+I've done a few other fun projects over the years, feel free to check them out:
+
+[duckyPad: Do-It-All Mechanical Macropad](https://github.com/dekuNukem/duckypad/blob/master/README.md): A 15-key mechanical macropad with hot-swap, RGB, and sophisticated multi-line scripting.
+
+[ATX4VC](https://github.com/dekuNukem/ATX4VC/blob/master/README.md): Replace vintage computer power supplies with ATX PSU!
+
+[USB4VC](https://github.com/dekuNukem/USB4VC/blob/master/README.md): USB Inputs on Retro Computers!
+
+[Pimp My Microwave](https://github.com/dekuNukem/pimp_my_microwave/blob/master/README.md): Fixing my microwave by grafting an RGB mechanical keyboard to it!
+
+[Daytripper: Hide-my-windows Laser Tripwire](https://github.com/dekuNukem/daytripper/blob/master/README.md): Saves the day while you slack off!
+
+[Bob Rewinder](https://github.com/dekuNukem/bob_cassette_rewinder/blob/master/README.md): Hacking Detergent DRM for 98% Cost Saving
+
+[From Aduino to STM32](https://github.com/dekuNukem/STM32_tutorials/blob/master/README.md): A detailed tutorial to get you started with STM32 development.
+
+[List of all my repos](https://github.com/dekuNukem?tab=repositories)
 
 ## Get in touch
 
-my usual contact info
+Questions or comments? Feel free to ask in official [ATX4VC Chatroom](https://discord.gg/T9uuFudg7j), raise a [Github issue](https://github.com/dekuNukem/RGBeeb/issues), or email `dekunukem` `gmail.com`!
+
 
 
 
