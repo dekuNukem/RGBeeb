@@ -8,6 +8,8 @@ With RGB Backlight, USB inputs, ATX PSU, and working full-height floppy drives.
 
 ![Alt text](photos/header.gif)
 
+[Click me for a short Youtube video!](https://www.youtube.com/watch?v=R9k7dgKrrnE)
+
 ## Highlights
 
 * Fully functional BBC Micro inside open-frame ATX PC case
@@ -16,9 +18,9 @@ With RGB Backlight, USB inputs, ATX PSU, and working full-height floppy drives.
 
 * Working dual full-height 5.25" Floppy Drives
 
-* USB keyboard and gamepad [via USB4VC](https://github.com/dekuNukem/USB4VC/blob/master/README.md)
+* USB keyboard and gamepad [by USB4VC](https://github.com/dekuNukem/USB4VC/blob/master/README.md)
 
-* ATX power control and RGB lighting [by ATX4VC](https://github.com/dekuNukem/ATX4VC)
+* ATX power and RGB control [by ATX4VC](https://github.com/dekuNukem/ATX4VC)
 
 ## Questions or comments?
 
@@ -457,9 +459,9 @@ Anyway, time to install the tempered glass for the money shot:
 
 ## Conclusion
 
-It's amazing how quickly a simple idea can get out of hand, I started out just wanting to put a BBC Micro motherboard into a ATX case, and in the end I developed a new protocol card for [USB4VC](https://github.com/dekuNukem/USB4VC/blob/master/README.md), an [ATX power controller](https://github.com/dekuNukem/ATX4VC/blob/master/README.md) just for retro computers, and a custom RGB backlight plate with 168 LEDs. Go big or go home, right? 😅
+It's amazing how quickly a simple idea can get out of hand, I started out just wanting to put a BBC Micro motherboard into a PC case, and in the end I developed a new protocol card for [USB4VC](https://github.com/dekuNukem/USB4VC/blob/master/README.md), an [ATX power controller](https://github.com/dekuNukem/ATX4VC/blob/master/README.md) just for retro computers, and a custom RGB backlight plate with 168 LEDs. Go big or go home, right? 😅
 
-None of this it totally necessary, but just like the Torch Communicator and the FrankenBeeb, the whole ordeal of dragging it kicking and screaming into the RGB age made it feels more special, and I guess this is what modification is all about.
+None of this is totally necessary, but just like the Torch Communicator and the FrankenBeeb, the whole ordeal of dragging it kicking and screaming into the RGB age made it feels more special, and I guess this is what modification is all about.
 
 Of course, I omitted a lot of less glamorous stuff such as writing and debugging firmwares, waiting for parts, many hardware revisions (ATX4VC had 6!), and fixing up old motherboards themselves. Took me about 3 months from start to finish.
 
@@ -501,9 +503,9 @@ I've done a few other fun projects over the years, feel free to check them out:
 
 [ATX4VC](https://github.com/dekuNukem/ATX4VC/blob/master/README.md): Replace vintage computer power supplies with ATX PSU!
 
-[USB4VC](https://github.com/dekuNukem/USB4VC/blob/master/README.md): USB Inputs on Retro Computers!
+[USB4VC](https://github.com/dekuNukem/USB4VC/blob/master/README.md): USB Inputs on Retro Computers
 
-[Pimp My Microwave](https://github.com/dekuNukem/pimp_my_microwave/blob/master/README.md): Fixing my microwave by grafting an RGB mechanical keyboard to it!
+[Pimp My Microwave](https://github.com/dekuNukem/pimp_my_microwave/blob/master/README.md): Fixing my microwave by grafting an RGB mechanical keyboard
 
 [Daytripper: Hide-my-windows Laser Tripwire](https://github.com/dekuNukem/daytripper/blob/master/README.md): Saves the day while you slack off!
 
