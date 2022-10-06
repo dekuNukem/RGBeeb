@@ -518,5 +518,28 @@ I've done a few other fun projects over the years, feel free to check them out:
 Questions or comments? Feel free to ask in official [ATX4VC Chatroom](https://discord.gg/T9uuFudg7j), raise a [Github issue](https://github.com/dekuNukem/RGBeeb/issues), or email `dekunukem` `gmail.com`!
 
 
+## Extra Trivia
 
+Congrats for reaching the bottom! If you stuck around this long, I can only post a few more interesting stuff!
 
+Remember the FrankenBeeb? I actually got *another* BBC Micro from the same person that's also customized. Take a look:
+
+![Alt text](photos/strange.jpeg)
+
+The owl logo from drilled holes! It looked very professionally done. Spacing is even, drill is clean, and they even deburred every single hole!
+
+![Alt text](photos/holes.jpeg)
+
+I have no idea if this was a one-off DIY job or some kind of send-in modification that people could do. Let me know what you think!
+
+Also, notice the keyboard, some keys are actually from a Torch Communicator!
+
+![Alt text](photos/keys.jpeg)
+
+The blue keys, and the tiny "exact space" key, which I have no idea what it's for. Is regular space bar not exact enough?
+
+--------
+
+Eagle eyed viewers might also notice quite a few different motherboards in the photos. There's a Issue 3, a Issue 7, and two Issue 4s.
+
+I must have like half a dozen Beeb motherboards, and just kept swapping part around to keep them going! I used the Issue 4 board in the end because it has all the optional upgrades.
