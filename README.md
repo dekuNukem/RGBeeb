@@ -311,7 +311,7 @@ As if by total coincidence, I happen to have a project for *exactly that*! What 
 
 With a modular design, different computers are supported by swapping out **Protocol Cards**.
 
-Naturally, I made one for the Beeb, with BBC Micro keyboard, joystick, and AMX user port mouse connector.
+Naturally, I made one for the Beeb, with connectors for keyboard, joystick, and AMX user port mouse.
 
 ![Alt text](photos/pcard.jpeg)
 
@@ -319,7 +319,7 @@ The prototype has a few bodge wires, but they are fixed in the latest revision. 
 
 ![Alt text](photos/pcardtest.gif)
 
-Pretty fun using a wireless mechanical keyboard and Xbox One controller on the Beeb!
+Pretty fun using a wireless keyboard and Xbox controller on the Beeb!
 
 And if for some reason you literally can't even be bothered to *type*, you can always let [duckyPad](https://github.com/dekuNukem/duckyPad/blob/master/README.md) do it!
 
@@ -333,11 +333,11 @@ Read more about [USB4VC](https://github.com/dekuNukem/USB4VC/blob/master/README.
 
 ------
 
-Phew! Two plugs in a row! Really pushing it here! 😅
+Phew! Two plugs in a row! Really pushing it there! 😅
 
 ## Here comes the twist
 
-With a flurry of modern upgrades, time to go balance it out with some good ol' 5.25" drives!
+With a flurry of modern upgrades, time to balance it out with some good ol' 5.25" drives!
 
 I wanted to have them from the start, partly for contrast with all the new stuff, and partly because I actually have a huge pile of floppies that I want to explore.
 
@@ -347,7 +347,7 @@ With both 40 and 80 tracks, it should cover most of the floppies from the era.
 
 ![Alt text](photos/both.jpeg)
 
-After some trail and error, I found that the cable needs to have **no twists**, and drive ID set manually with jumper
+After some trail and error, I found that the cable needs to have **no twists**, and drive ID set manually with jumper.
 
 I had to manually de-twist my cable by cutting and re-soldering the wires in order, which was a bit annoying, but with that and manually setting the drive ID 0 and 1, both worked!
 
@@ -361,7 +361,7 @@ The right side of the case has slots for mounting water cooling radiators, I wen
 
 ![Alt text](photos/bnq.png)
 
-They are screwed into the slot and hold the drives from the bottom. I really wanted something more substantial, like a one-piece metal bracket, but custom fabrication would have been a lot more expensive.
+They are fastened into the slot and hold the drives from the bottom. I really wanted something more substantial, like a one-piece metal bracket, but custom fabrication would have been a lot more expensive.
 
 ![Alt text](photos/empty.jpeg)
 
@@ -379,7 +379,7 @@ Well, it's about time that we do something to it...
 
 ## Motherboard modifications
 
-This is the part where I put the motherboard under the knife (well soldering iron). As I mentioned before, all modifications are purely for aesthetic reasons, and are totally **optional and reversible**.
+This is the part where I put the motherboard under the knife (well, soldering iron). As mentioned before, all modifications are purely for aesthetic reasons, and are totally **optional and reversible**.
 
 First, I desoldered the Tube, 1MHz, and user port header:
 
@@ -399,19 +399,17 @@ I then soldered a straight header on the user port, so I can use the excellent M
 
 I then ran power cables to connect all the rails together, 5V, GND, and -5V.
 
-If making your own, make sure the cable you use is thick enough to carry at least 2A of current, and double check for shorts between 5V and GND, and make sure the exposed conductor is not shorting on nearby traces and components.
+If making your own, make sure the cable is thick enough to carry at least 2A of current. Double check for shorts between 5V and GND, and the exposed conductor is not touching nearby traces and components.
 
 I also soldered the keyboard header on the back side.
 
 ![Alt text](photos/power.jpeg)
 
-This way, the power can be plugged into ATX4VC, and keyboard ribbon cable can exit through the hole on the ATX plate so it won't block the backlight.
-
 ## Putting it all together
 
 Time to finally put everything together! 
 
-I fed the floppy and power cable through the hole in the adapter plate, and screwed it in.
+I fed the floppy and power cable through the hole in the adapter plate, and mounted the motherboard.
 
 ![Alt text](photos/back.jpeg)
 
