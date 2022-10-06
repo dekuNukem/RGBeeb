@@ -48,7 +48,7 @@ Feel free to ask in my [Discord Chatroom](https://discord.gg/T9uuFudg7j), raise 
 
 ### Specifications
 
-The original Beeb featured a 6502 microprocessor running at 2MHz, 32K of ROM, and either 16 or 32K of RAM. Its [BASIC interpreter](https://en.wikipedia.org/wiki/BBC_BASIC) was notably one of the fastest of the era, beating even the original IMB PC!
+The original Beeb featured a 6502 microprocessor running at 2MHz, 32K of ROM, and either 16 or 32K of RAM. Its [BASIC interpreter](https://en.wikipedia.org/wiki/BBC_BASIC) was notably one of the fastest of the era, beating even the original IBM PC!
 
 It was also extremely expandable, with a plethora of ports including RS423, cassette, analogue, Econet, a digital user port, a 1MHz bus connection, and a "Tube" expansion slot.
 
@@ -106,7 +106,7 @@ I removed the RIFA caps from the PSU, took lots of photos for documentation, cle
 
 ![Alt text](photos/roms.jpeg)
 
-The disc drive works too! I decided not to risk the original power supply, and used a modern ATX PSU to power the drive. The FrankenBeeb read the discs just fine:
+The disc drive works too! I decided not to risk the original power supply, and used a modern ATX PSU to power them. The FrankenBeeb read the discs just fine:
 
 ![Alt text](photos/mess2.jpg)
 
@@ -185,7 +185,7 @@ Some of them are just scaffolding for mining rigs, but one in particular really 
 
 * And most importantly, the slot cutouts near the front edge are perfect for mounting 5.25" inch drives!
 
-The clean and minimalist design also changed my mind about the overall aesthetics. Instead of full-on obnoxious RGB blast, now I kind of want something more subtle and tasteful. It's still early, so I'll see what I can do.
+The clean and minimalist design also changed my mind about the overall aesthetics. Instead of full-on obnoxious RGB blast, now I want something more subtle and tasteful. It's still early, so I'll see what I can do.
 
 It's not cheap, but I really liked it, so I ordered one.
 
@@ -201,7 +201,7 @@ The case soon arrived, I had the main chassis laid out and tried out the adapter
 
 It works! And already looks pretty good! I really like how modular this case is. 
 
-I then installed the ATX power supply. Annoyingly the RGB fan points downwards, so it is practically invisible with the case standing up. But at least it's white!
+I then installed the ATX power supply. Annoyingly its RGB fan points downwards, so it is practically invisible with the case standing up. But at least it's white!
 
 ![Alt text](photos/atxpsu.jpeg)
 
@@ -459,7 +459,7 @@ Anyway, time to install the tempered glass for the money shot:
 
 It's amazing how quickly a simple idea can get out of hand, I started out just wanting to put a BBC Micro motherboard into a PC case, and in the end I developed a new protocol card for [USB4VC](https://github.com/dekuNukem/USB4VC/blob/master/README.md), an [ATX power controller](https://github.com/dekuNukem/ATX4VC/blob/master/README.md) just for retro computers, and a custom RGB backlight plate with 168 LEDs. Go big or go home, right? 😅
 
-None of this is totally necessary, but just like the Torch Communicator and the FrankenBeeb, the whole ordeal of dragging it kicking and screaming into the RGB age made it feels more special, and I guess this is what modification is all about.
+None of this is totally necessary, but just like the Torch Communicator and the FrankenBeeb, the whole ordeal of dragging it kicking and screaming into the RGB age made it feel more special, and I guess this is what modification is all about.
 
 Of course, I omitted a lot of less glamorous stuff such as writing and debugging firmwares, waiting for parts, many hardware revisions (ATX4VC had 6!), and fixing up old motherboards themselves. Took me about 3 months from start to finish.
 
