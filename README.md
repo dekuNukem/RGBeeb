@@ -8,7 +8,7 @@ With RGB Backlight, USB inputs, ATX PSU, and working full-height floppy drives.
 
 ![Alt text](photos/header.gif)
 
-[Click me for a short Youtube video!](https://www.youtube.com/watch?v=R9k7dgKrrnE)
+[Click me for a short video!](https://www.youtube.com/watch?v=R9k7dgKrrnE)
 
 ## Highlights
 
@@ -311,11 +311,9 @@ As if by total coincidence, I happen to have a project for *exactly that*! What 
 
 With a modular design, different computers are supported by swapping out **Protocol Cards**.
 
-Naturally, I made one for the Beeb:
+Naturally, I made one for the Beeb, with BBC Micro keyboard, joystick, and AMX user port mouse connector.
 
 ![Alt text](photos/pcard.jpeg)
-
-It supports BBC Micro keyboard, joystick, and AMX user port mouse.
 
 The prototype has a few bodge wires, but they are fixed in the latest revision. And it works!
 

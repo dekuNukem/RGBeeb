@@ -9,16 +9,16 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="320mm"
-   height="250mm"
-   viewBox="0 0 320 250"
+   width="297mm"
+   height="420mm"
+   viewBox="0 0 297 420"
    version="1.1"
    id="svg8"
    inkscape:version="0.92.4 (5da689c313, 2019-01-14)"
    sodipodi:docname="comparison no hole.svg"
-   inkscape:export-filename="C:\Users\allen\Desktop\comparison.png"
-   inkscape:export-xdpi="75.029999"
-   inkscape:export-ydpi="75.029999">
+   inkscape:export-filename="C:\Users\allen\Desktop\2222.png"
+   inkscape:export-xdpi="99.97509"
+   inkscape:export-ydpi="99.97509">
   <defs
      id="defs2" />
   <sodipodi:namedview
@@ -28,9 +28,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.7"
-     inkscape:cx="368.51266"
-     inkscape:cy="471.04035"
+     inkscape:zoom="0.49497475"
+     inkscape:cx="486.69116"
+     inkscape:cy="854.01488"
      inkscape:document-units="mm"
      inkscape:current-layer="layer2"
      showgrid="false"
@@ -49,7 +49,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -58,58 +58,60 @@
      id="layer2"
      inkscape:label="ATX"
      style="display:inline"
-     transform="translate(0,6)">
+     transform="translate(0,176)">
     <rect
-       style="opacity:1;fill:none;fill-opacity:1;stroke:#0000ff;stroke-width:1.10000002;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       style="opacity:1;fill:none;fill-opacity:1;stroke:#0000ff;stroke-width:2.3;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
        id="rect832"
        width="305"
        height="244"
-       x="5.3953905"
-       y="-2.7226954"
+       x="-186.35469"
+       y="22.288246"
        rx="8"
-       ry="8" />
+       ry="8"
+       transform="rotate(-90)" />
   </g>
   <g
      inkscape:label="BBC"
      inkscape:groupmode="layer"
      id="layer1"
-     transform="translate(0,-47)"
-     style="display:inline">
+     style="display:inline"
+     transform="translate(0,123)">
     <rect
        ry="8"
        rx="8"
-       y="50.277306"
-       x="5.3953905"
-       height="230"
+       y="22.288246"
+       x="-244.35469"
+       height="250"
        width="310"
        id="rect829"
-       style="display:inline;opacity:1;fill:none;fill-opacity:1;stroke:#ff0000;stroke-width:1.10000002;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+       style="display:inline;opacity:1;fill:none;fill-opacity:1;stroke:#ff0000;stroke-width:2.3;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       transform="rotate(-90)" />
     <text
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:10.58333302px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26499999;stroke-miterlimit:4;stroke-dasharray:none"
-       x="70.420616"
-       y="159.0387"
+       x="56.813473"
+       y="73.616074"
        id="text869"><tspan
          sodipodi:role="line"
          id="tspan867"
-         x="70.420616"
-         y="159.0387"
+         x="56.813473"
+         y="73.616074"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:19.75555611px;font-family:'Microsoft YaHei';-inkscape-font-specification:'Microsoft YaHei';fill:#0000ff;fill-opacity:1;stroke:none;stroke-width:0.26499999;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1">ATX: 305 x 244mm</tspan><tspan
          sodipodi:role="line"
-         x="70.420616"
-         y="175.86259"
+         x="56.813473"
+         y="90.439972"
          style="font-size:19.75555611px;fill:#0000ff;fill-opacity:1;stroke:none;stroke-width:0.26499999;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
          id="tspan885" /></text>
     <text
        id="text891"
-       y="179.82739"
-       x="69.547623"
+       y="94.40477"
+       x="55.940479"
        style="font-style:normal;font-weight:normal;font-size:10.58333302px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26499999;stroke-miterlimit:4;stroke-dasharray:none"
        xml:space="preserve"><tspan
          id="tspan889"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:19.75555611px;font-family:'Microsoft YaHei';-inkscape-font-specification:'Microsoft YaHei';fill:#ff0000;fill-opacity:1;stroke:none;stroke-width:0.26499999;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-         y="179.82739"
-         x="69.547623"
-         sodipodi:role="line">BBC: 310 x 230mm</tspan></text>
+         y="94.40477"
+         x="55.940479"
+         sodipodi:role="line">BBC: 310 x 250mm</tspan></text>
   </g>
 </svg>

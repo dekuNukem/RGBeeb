@@ -17,7 +17,179 @@
    inkscape:version="0.92.4 (5da689c313, 2019-01-14)"
    sodipodi:docname="atx_plate_oblong.svg">
   <defs
-     id="defs2" />
+     id="defs2">
+    <clipPath
+       id="clipPath851"
+       clipPathUnits="userSpaceOnUse">
+      <path
+         style="clip-rule:evenodd"
+         inkscape:connector-curvature="0"
+         id="path849"
+         d="m 215.84,99.68 v 923.2 H 1372.16 V 99.68 Z m 2.4,13.12 v 902.4 H 1363.6801 V 112.8 Z" />
+    </clipPath>
+    <clipPath
+       id="clipPath883"
+       clipPathUnits="userSpaceOnUse">
+      <path
+         style="clip-rule:evenodd"
+         inkscape:connector-curvature="0"
+         id="path881"
+         d="M -19.200001,-0.32 H 0.48 v 12.96 h -19.680001 z" />
+    </clipPath>
+    <clipPath
+       id="clipPath893"
+       clipPathUnits="userSpaceOnUse">
+      <path
+         style="clip-rule:evenodd"
+         inkscape:connector-curvature="0"
+         id="path891"
+         d="m -0.32,12 h 19.680001 v 7.360001 H -0.32 Z" />
+    </clipPath>
+    <clipPath
+       id="clipPath903"
+       clipPathUnits="userSpaceOnUse">
+      <path
+         style="clip-rule:evenodd"
+         inkscape:connector-curvature="0"
+         id="path901"
+         d="m 215.84,99.68 v 923.2 H 1372.16 V 99.68 Z m 2.4,13.12 v 902.4 H 1363.6801 V 112.8 Z" />
+    </clipPath>
+    <clipPath
+       id="clipPath913"
+       clipPathUnits="userSpaceOnUse">
+      <path
+         style="clip-rule:evenodd"
+         inkscape:connector-curvature="0"
+         id="path911"
+         d="m -0.32,-6.88 h 10.4 v 7.36 h -10.4 z" />
+    </clipPath>
+    <clipPath
+       id="clipPath923"
+       clipPathUnits="userSpaceOnUse">
+      <path
+         style="clip-rule:evenodd"
+         inkscape:connector-curvature="0"
+         id="path921"
+         d="m -0.32,2.72 h 10.4 v 7.36 h -10.4 z" />
+    </clipPath>
+    <clipPath
+       id="clipPath933"
+       clipPathUnits="userSpaceOnUse">
+      <path
+         style="clip-rule:evenodd"
+         inkscape:connector-curvature="0"
+         id="path931"
+         d="m 215.84,99.68 v 923.2 H 1372.16 V 99.68 Z m 2.4,13.12 v 902.4 H 1363.6801 V 112.8 Z" />
+    </clipPath>
+    <clipPath
+       id="clipPath945"
+       clipPathUnits="userSpaceOnUse">
+      <path
+         style="clip-rule:evenodd"
+         inkscape:connector-curvature="0"
+         id="path943"
+         d="M 218.24,112.8 H 504.64001 V 413.76001 H 218.24 Z" />
+    </clipPath>
+    <clipPath
+       id="clipPath957"
+       clipPathUnits="userSpaceOnUse">
+      <path
+         style="clip-rule:evenodd"
+         inkscape:connector-curvature="0"
+         id="path955"
+         d="M 504.48001,112.8 H 790.88 V 413.76001 H 504.48001 Z" />
+    </clipPath>
+    <clipPath
+       id="clipPath969"
+       clipPathUnits="userSpaceOnUse">
+      <path
+         style="clip-rule:evenodd"
+         inkscape:connector-curvature="0"
+         id="path967"
+         d="M 790.71997,112.8 H 1077.12 V 413.76001 H 790.71997 Z" />
+    </clipPath>
+    <clipPath
+       id="clipPath981"
+       clipPathUnits="userSpaceOnUse">
+      <path
+         style="clip-rule:evenodd"
+         inkscape:connector-curvature="0"
+         id="path979"
+         d="m 1076.96,112.8 h 286.88 v 300.96001 h -286.88 z" />
+    </clipPath>
+    <clipPath
+       id="clipPath993"
+       clipPathUnits="userSpaceOnUse">
+      <path
+         style="clip-rule:evenodd"
+         inkscape:connector-curvature="0"
+         id="path991"
+         d="M 218.24,413.60001 H 504.64001 V 714.56 H 218.24 Z" />
+    </clipPath>
+    <clipPath
+       id="clipPath1005"
+       clipPathUnits="userSpaceOnUse">
+      <path
+         style="clip-rule:evenodd"
+         inkscape:connector-curvature="0"
+         id="path1003"
+         d="M 504.48001,413.60001 H 790.88 V 714.56 H 504.48001 Z" />
+    </clipPath>
+    <clipPath
+       id="clipPath1017"
+       clipPathUnits="userSpaceOnUse">
+      <path
+         style="clip-rule:evenodd"
+         inkscape:connector-curvature="0"
+         id="path1015"
+         d="M 790.71997,413.60001 H 1077.12 V 714.56 H 790.71997 Z" />
+    </clipPath>
+    <clipPath
+       id="clipPath1029"
+       clipPathUnits="userSpaceOnUse">
+      <path
+         style="clip-rule:evenodd"
+         inkscape:connector-curvature="0"
+         id="path1027"
+         d="m 1076.96,413.60001 h 286.88 V 714.56 h -286.88 z" />
+    </clipPath>
+    <clipPath
+       id="clipPath1041"
+       clipPathUnits="userSpaceOnUse">
+      <path
+         style="clip-rule:evenodd"
+         inkscape:connector-curvature="0"
+         id="path1039"
+         d="M 218.24,714.40002 H 504.64001 V 1015.36 H 218.24 Z" />
+    </clipPath>
+    <clipPath
+       id="clipPath1053"
+       clipPathUnits="userSpaceOnUse">
+      <path
+         style="clip-rule:evenodd"
+         inkscape:connector-curvature="0"
+         id="path1051"
+         d="M 504.48001,714.40002 H 790.88 V 1015.36 H 504.48001 Z" />
+    </clipPath>
+    <clipPath
+       id="clipPath1065"
+       clipPathUnits="userSpaceOnUse">
+      <path
+         style="clip-rule:evenodd"
+         inkscape:connector-curvature="0"
+         id="path1063"
+         d="M 790.71997,714.40002 H 1077.12 V 1015.36 H 790.71997 Z" />
+    </clipPath>
+    <clipPath
+       id="clipPath1077"
+       clipPathUnits="userSpaceOnUse">
+      <path
+         style="clip-rule:evenodd"
+         inkscape:connector-curvature="0"
+         id="path1075"
+         d="m 1076.96,714.40002 h 286.88 V 1015.36 h -286.88 z" />
+    </clipPath>
+  </defs>
   <sodipodi:namedview
      id="base"
      pagecolor="#ffffff"
@@ -26,8 +198,8 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="0.7"
-     inkscape:cx="600.93123"
-     inkscape:cy="363.81551"
+     inkscape:cx="484.48174"
+     inkscape:cy="487.57189"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -69,83 +241,72 @@
      transform="translate(0,-47)"
      style="display:inline">
     <circle
-       transform="translate(0,47)"
        style="display:inline;opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.2;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
        id="circle4532"
-       cx="24.060001"
-       cy="240.59999"
+       cx="19.249149"
+       cy="289.00314"
        r="2" />
     <circle
-       transform="translate(0,47)"
        r="2"
-       cy="240.59999"
-       cx="148.52002"
+       cy="289.00314"
+       cx="143.70917"
        id="circle843"
        style="display:inline;opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.2;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
     <circle
-       transform="translate(0,47)"
        style="display:inline;opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.2;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
        id="circle845"
-       cx="306"
-       cy="240.59999"
+       cx="301.18915"
+       cy="289.00314"
        r="2" />
     <circle
-       transform="translate(0,47)"
        r="2"
-       cy="168.21001"
-       cx="24.060001"
+       cy="216.61317"
+       cx="19.249149"
        id="circle854"
        style="display:inline;opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.2;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
     <circle
-       transform="translate(0,47)"
        style="display:inline;opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.2;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
        id="circle856"
-       cx="148.52002"
-       cy="168.21001"
+       cx="143.70917"
+       cy="216.61317"
        r="2" />
     <circle
-       transform="translate(0,47)"
        r="2"
-       cy="168.21001"
-       cx="306"
+       cy="216.61317"
+       cx="301.18915"
        id="circle858"
        style="display:inline;opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.2;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
     <circle
-       transform="translate(0,47)"
        style="display:inline;opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.2;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
        id="circle865"
-       cx="24.060001"
-       cy="13.270012"
+       cx="19.249149"
+       cy="61.673176"
        r="2" />
     <circle
-       transform="translate(0,47)"
        r="2"
-       cy="13.270012"
-       cx="148.52002"
+       cy="61.673176"
+       cx="143.70917"
        id="circle867"
        style="display:inline;opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.2;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
     <circle
-       transform="translate(0,47)"
        style="display:inline;opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.2;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
        id="circle883"
-       cx="102.8"
-       cy="13.270012"
+       cx="97.989151"
+       cy="61.673176"
        r="2" />
     <circle
-       transform="translate(0,47)"
        style="display:inline;opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.2;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
        id="circle885"
-       cx="306"
-       cy="36.130009"
+       cx="301.18915"
+       cy="84.533173"
        r="2" />
     <rect
-       transform="translate(0,47)"
        style="display:inline;opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.1;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
        id="rect832"
        width="305"
        height="244"
-       x="7.5"
-       y="3"
+       x="2.6891484"
+       y="51.403164"
        rx="8"
        ry="8" />
     <rect
@@ -153,15 +314,15 @@
        id="rect831"
        width="4.5"
        height="12"
-       x="11.1"
-       y="77.950027"
+       x="6.2891488"
+       y="79.353195"
        rx="1"
        ry="1" />
     <rect
        ry="1"
        rx="1"
-       y="265.44998"
-       x="73.100388"
+       y="266.85315"
+       x="68.289536"
        height="12"
        width="4.5"
        id="rect1255"
@@ -171,15 +332,15 @@
        id="rect1257"
        width="4.5"
        height="12"
-       x="157.6004"
-       y="262.44998"
+       x="152.78955"
+       y="263.85315"
        rx="1"
        ry="1" />
     <rect
        ry="1"
        rx="1"
-       y="265.44998"
-       x="241.1004"
+       y="266.85315"
+       x="236.28955"
        height="12"
        width="4.5"
        id="rect1259"
@@ -189,8 +350,8 @@
        id="rect1263"
        width="4.5"
        height="12"
-       x="293.39999"
-       y="105.94971"
+       x="288.48889"
+       y="107.35287"
        rx="1"
        ry="1" />
   </g>
