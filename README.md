@@ -134,7 +134,7 @@ Imagine my surprise when it turns out the BBC micro motherboard is **almost iden
 
 Either it's one hell of a coincidence, or Acorn was so ahead of its time that it predicted ATX form factor by **14 years**!
 
-Still in disbelief, I placed the BBC motherboard inside a ATX case, and low and behold:
+Still in disbelief, I placed the BBC motherboard inside a ATX case, lo and behold:
 
 ![Alt text](photos/mock.jpeg)
 
